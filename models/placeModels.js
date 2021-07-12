@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import Comment from './commentModels.js'
 
 const placeSchema = mongoose.Schema({
   type: { type: String },
@@ -14,7 +15,7 @@ const placeSchema = mongoose.Schema({
   updated_at: { type: Date, default: Date.now() },
   body: { type: String, required: true },
   images: [{ type: String }],
-  comments: [{ type: String }],
+  comments: [{ type: mongoose.Types.ObjectId, ref: Comment }],
 })
 
 // Duplicate the ID field.
@@ -27,6 +28,6 @@ placeSchema.set('toJSON', {
   virtuals: true,
 })
 
-const Place = mongoose.model('places', placeSchema)
+const Place = mongoose.model('Places', placeSchema)
 
 export default Place
