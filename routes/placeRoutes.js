@@ -4,6 +4,6 @@ import Place from '../models/placeModels.js'
 import { getPlaces } from '../controllers/placeController.js'
 const Routes = express.Router()
 
-Routes.get('/', paginatedResult(Place), getPlaces)
+Routes.get('/', paginatedResult(Place, 'comments'), getPlaces)
 
 export default Routes

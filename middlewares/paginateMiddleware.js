@@ -1,21 +1,13 @@
 import asyncHandler from 'express-async-handler'
 
-const paginatedResult = (model) =>
+const paginatedResult = (model, populateText) =>
   asyncHandler(async (req, res, next) => {
     const page = parseInt(req.query.page) || 1
     const limit = 3
-    // 5
-    // 10
-    console.log(model)
 
     const startIndex = (page - 1) * limit
     const endIndex = page * limit
     const modelLength = await model.countDocuments().exec()
-
-    console.log(page)
-    console.log(startIndex)
-    console.log(endIndex)
-    console.log(modelLength)
 
     const links = {}
     let data = []
@@ -52,7 +44,14 @@ const paginatedResult = (model) =>
     }
 
     try {
-      data = await model.find().limit(limit).skip(startIndex).exec()
+      data = populateText
+        ? await model
+            .find()
+            .limit(limit)
+            .skip(startIndex)
+            .populate(populateText)
+            .exec()
+        : await model.find().limit(limit).skip(startIndex).exec()
       res.links = links
       res.data = data
       next()
