@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import normalize from 'normalize-mongoose'
 import Comment from './commentModels.js'
 
 const placeSchema = mongoose.Schema({
@@ -18,15 +19,7 @@ const placeSchema = mongoose.Schema({
   comments: [{ type: mongoose.Types.ObjectId, ref: Comment }],
 })
 
-// Duplicate the ID field.
-placeSchema.virtual('id').get(function () {
-  return this._id.toHexString()
-})
-
-// Ensure virtual fields are serialised.
-placeSchema.set('toJSON', {
-  virtuals: true,
-})
+placeSchema.plugin(normalize)
 
 const Place = mongoose.model('Places', placeSchema)
 

@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
 
-const getPlaces = asyncHandler(async (req, res) => {
+const getComments = asyncHandler(async (req, res) => {
   const links = res.links
   const data = res.data
   const meta = res.meta
@@ -13,4 +13,4 @@ const getPlaces = asyncHandler(async (req, res) => {
   res.send(response)
 })
 
-export { getPlaces }
+export { getComments }
