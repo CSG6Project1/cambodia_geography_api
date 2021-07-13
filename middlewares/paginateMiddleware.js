@@ -11,6 +11,11 @@ const paginatedResult = (model, populateText) =>
 
     const links = {}
     let data = []
+    let meta = {}
+
+    meta.count = limit
+    meta.total_count = modelLength
+    meta.total_pages = Math.round(modelLength / limit)
 
     if (endIndex < modelLength) {
       links.self = `http://localhost:5000/places?page=${page}`
@@ -54,6 +59,7 @@ const paginatedResult = (model, populateText) =>
         : await model.find().limit(limit).skip(startIndex).exec()
       res.links = links
       res.data = data
+      res.meta = meta
       next()
     } catch (error) {
       res.status(500).json({ message: error.message })

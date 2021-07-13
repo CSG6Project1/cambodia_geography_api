@@ -5,11 +5,10 @@ const getPlaces = asyncHandler(async (req, res) => {
   const places = await Place.find()
   const links = res.links
   const data = res.data
+  const meta = res.meta
   const response = {
     data: data,
-    meta: {
-      count: await Place.find().countDocuments(),
-    },
+    meta,
     links,
   }
   res.status(200)
