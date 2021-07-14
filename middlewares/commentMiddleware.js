@@ -24,40 +24,40 @@ const commentResult = (model, populateText) =>
     meta.total_pages = Math.round(modelLength / limit)
 
     if (endIndex < modelLength) {
-      links.self = `http://localhost:5000/places/${id}/comments?page=${page}`
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}`
       if (page + 1 <= Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places/${id}/comments?page=${
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
           page + 1
         }`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places/${id}/comments?page=${
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
           page - 1
         }`
       }
 
-      links.first = `http://localhost:5000/places/${id}/comments?page=1`
-      links.last = `http://localhost:5000/places/${id}/comments?page=${Math.round(
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
         modelLength / limit
       )}`
     }
 
     if (startIndex > 0) {
-      links.self = `http://localhost:5000/places/${id}/comments?page=${page}`
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}`
       if (page + 1 < Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places/${id}/comments?page=${
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
           page + 1
         }`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places/${id}/comments?page=${
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
           page - 1
         }`
       }
-      links.first = `http://localhost:5000/places/${id}/comments?page=1`
-      links.last = `http://localhost:5000/places/${id}/comments?page=${Math.round(
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
         modelLength / limit
       )}`
     }

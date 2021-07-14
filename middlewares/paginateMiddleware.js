@@ -1,5 +1,7 @@
 import asyncHandler from 'express-async-handler'
+import dotenv from 'dotenv'
 
+dotenv.config()
 const paginatedResult = (model, populateText) =>
   asyncHandler(async (req, res, next) => {
     const page = parseInt(req.query.page) || 1
@@ -18,32 +20,32 @@ const paginatedResult = (model, populateText) =>
     meta.total_pages = Math.round(modelLength / limit)
 
     if (endIndex < modelLength) {
-      links.self = `http://localhost:5000/places?page=${page}`
+      links.self = `${process.env.HOST}/places?page=${page}`
       if (page + 1 <= Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places?page=${page + 1}`
+        links.next = `${process.env.HOST}/places?page=${page + 1}`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places?page=${page - 1}`
+        links.prev = `${process.env.HOST}/places?page=${page - 1}`
       }
 
-      links.first = `http://localhost:5000/places?page=1`
-      links.last = `http://localhost:5000/places?page=${Math.round(
+      links.first = `${process.env.HOST}/places?page=1`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
         modelLength / limit
       )}`
     }
 
     if (startIndex > 0) {
-      links.self = `http://localhost:5000/places?page=${page}`
+      links.self = `${process.env.HOST}/places?page=${page}`
       if (page + 1 < Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places?page=${page + 1}`
+        links.next = `${process.env.HOST}/places?page=${page + 1}`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places?page=${page - 1}`
+        links.prev = `${process.env.HOST}/places?page=${page - 1}`
       }
-      links.first = `http://localhost:5000/places?page=1`
-      links.last = `http://localhost:5000/places?page=${Math.round(
+      links.first = `${process.env.HOST}/places?page=1`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
         modelLength / limit
       )}`
     }
