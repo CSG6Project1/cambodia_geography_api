@@ -4,7 +4,7 @@ const commentResult = (model, populateText) =>
   asyncHandler(async (req, res, next) => {
     const id = req.params.id
     const page = parseInt(req.query.page) || 1
-    const limit = 3
+    const limit = parseInt(req.query.per_page) || 5
 
     const startIndex = (page - 1) * limit
     const endIndex = page * limit
@@ -23,41 +23,76 @@ const commentResult = (model, populateText) =>
     meta.total_count = modelLength
     meta.total_pages = Math.round(modelLength / limit)
 
-    if (endIndex < modelLength) {
-      links.self = `http://localhost:5000/places/${id}/comments?page=${page}`
+    if (endIndex < modelLength && req.query.per_page) {
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}&per_page=${limit}`
       if (page + 1 <= Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places/${id}/comments?page=${
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
+          page + 1
+        }&per_page=${limit}`
+      }
+
+      if (page - 1 > 0) {
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
+          page - 1
+        }&per_page=${limit}`
+      }
+
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1&per_page=${limit}`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
+        modelLength / limit
+      )}&per_page=${limit}`
+    } else if (endIndex < modelLength) {
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}`
+      if (page + 1 <= Math.round(modelLength / limit)) {
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
           page + 1
         }`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places/${id}/comments?page=${
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
           page - 1
         }`
       }
 
-      links.first = `http://localhost:5000/places/${id}/comments?page=1`
-      links.last = `http://localhost:5000/places/${id}/comments?page=${Math.round(
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
         modelLength / limit
       )}`
     }
 
-    if (startIndex > 0) {
-      links.self = `http://localhost:5000/places/${id}/comments?page=${page}`
+    if (startIndex > 0 && req.query.per_page) {
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}&per_page=${limit}`
       if (page + 1 < Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places/${id}/comments?page=${
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
+          page + 1
+        }&per_page=${limit}`
+      }
+
+      if (page - 1 > 0) {
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
+          page - 1
+        }&per_page=${limit}`
+      }
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1&per_page=${limit}`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
+        modelLength / limit
+      )}&per_page=${limit}`
+    } else if (startIndex > 0) {
+      links.self = `${process.env.HOST}/places/${id}/comments?page=${page}`
+      if (page + 1 < Math.round(modelLength / limit)) {
+        links.next = `${process.env.HOST}/places/${id}/comments?page=${
           page + 1
         }`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places/${id}/comments?page=${
+        links.prev = `${process.env.HOST}/places/${id}/comments?page=${
           page - 1
         }`
       }
-      links.first = `http://localhost:5000/places/${id}/comments?page=1`
-      links.last = `http://localhost:5000/places/${id}/comments?page=${Math.round(
+      links.first = `${process.env.HOST}/places/${id}/comments?page=1`
+      links.last = `${process.env.HOST}/places/${id}/comments?page=${Math.round(
         modelLength / limit
       )}`
     }

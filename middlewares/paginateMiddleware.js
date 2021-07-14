@@ -1,9 +1,11 @@
 import asyncHandler from 'express-async-handler'
+import dotenv from 'dotenv'
 
+dotenv.config()
 const paginatedResult = (model, populateText) =>
   asyncHandler(async (req, res, next) => {
     const page = parseInt(req.query.page) || 1
-    const limit = 3
+    const limit = parseInt(req.query.per_page) || 5
 
     const startIndex = (page - 1) * limit
     const endIndex = page * limit
@@ -17,33 +19,68 @@ const paginatedResult = (model, populateText) =>
     meta.total_count = modelLength
     meta.total_pages = Math.round(modelLength / limit)
 
-    if (endIndex < modelLength) {
-      links.self = `http://localhost:5000/places?page=${page}`
+    if (endIndex < modelLength && req.query.per_page) {
+      links.self = `${process.env.HOST}/places?page=${page}&per_page=${limit}`
       if (page + 1 <= Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places?page=${page + 1}`
+        links.next = `${process.env.HOST}/places?page=${
+          page + 1
+        }&per_page=${limit}`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places?page=${page - 1}`
+        links.prev = `${process.env.HOST}/places?page=${
+          page - 1
+        }&per_page=${limit}`
       }
 
-      links.first = `http://localhost:5000/places?page=1`
-      links.last = `http://localhost:5000/places?page=${Math.round(
+      links.first = `${process.env.HOST}/places?page=1&per_page=${limit}`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
+        modelLength / limit
+      )}&per_page=${limit}`
+    } else if (endIndex < modelLength) {
+      links.self = `${process.env.HOST}/places?page=${page}`
+      if (page + 1 <= Math.round(modelLength / limit)) {
+        links.next = `${process.env.HOST}/places?page=${page + 1}`
+      }
+
+      if (page - 1 > 0) {
+        links.prev = `${process.env.HOST}/places?page=${page - 1}`
+      }
+
+      links.first = `${process.env.HOST}/places?page=1`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
         modelLength / limit
       )}`
     }
 
-    if (startIndex > 0) {
-      links.self = `http://localhost:5000/places?page=${page}`
+    if (startIndex > 0 && req.query.per_page) {
+      links.self = `${process.env.HOST}/places?page=${page}&per_page=${limit}`
       if (page + 1 < Math.round(modelLength / limit)) {
-        links.next = `http://localhost:5000/places?page=${page + 1}`
+        links.next = `${process.env.HOST}/places?page=${
+          page + 1
+        }&per_page=${limit}`
       }
 
       if (page - 1 > 0) {
-        links.prev = `http://localhost:5000/places?page=${page - 1}`
+        links.prev = `${process.env.HOST}/places?page=${
+          page - 1
+        }&per_page=${limit}`
       }
-      links.first = `http://localhost:5000/places?page=1`
-      links.last = `http://localhost:5000/places?page=${Math.round(
+      links.first = `${process.env.HOST}/places?page=1&per_page=${limit}`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
+        modelLength / limit
+      )}&per_page=${limit}`
+    } else if (startIndex > 0) {
+      links.self = `${process.env.HOST}/places?page=${page}`
+      if (page + 1 < Math.round(modelLength / limit)) {
+        links.next = `${process.env.HOST}/places?page=${page + 1}`
+      }
+
+      if (page - 1 > 0) {
+        links.prev = `${process.env.HOST}/places?page=${page - 1}`
+      }
+      links.first = `${process.env.HOST}/places?page=1`
+      links.last = `${process.env.HOST}/places?page=${Math.round(
         modelLength / limit
       )}`
     }
