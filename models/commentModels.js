@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import normalize from 'normalize-mongoose'
 
 const commentSchema = mongoose.Schema({
   type: { type: String },
@@ -10,15 +11,7 @@ const commentSchema = mongoose.Schema({
   updated_at: { type: Date, default: Date.now() },
 })
 
-// Duplicate the ID field.
-commentSchema.virtual('id').get(function () {
-  return this._id.toHexString()
-})
-
-// Ensure virtual fields are serialised.
-commentSchema.set('toJSON', {
-  virtuals: true,
-})
+commentSchema.plugin(normalize)
 
 const Comment = mongoose.model('Comments', commentSchema)
 

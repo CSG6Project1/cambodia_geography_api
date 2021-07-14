@@ -1,9 +1,13 @@
 import express from 'express'
 import paginatedResult from '../middlewares/paginateMiddleware.js'
+import commentResult from '../middlewares/commentMiddleware.js'
 import Place from '../models/placeModels.js'
+import Comment from '../models/commentModels.js'
 import { getPlaces } from '../controllers/placeController.js'
-const Routes = express.Router()
+import { getComments } from '../controllers/commentController.js'
+const router = express.Router()
 
-Routes.get('/', paginatedResult(Place, 'comments'), getPlaces)
+router.route('/').get(paginatedResult(Place, 'comments'), getPlaces)
+router.route('/:id/comments').get(commentResult(Place, 'comments'), getComments)
 
-export default Routes
+export default router
