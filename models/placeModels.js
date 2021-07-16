@@ -14,7 +14,7 @@ const placeSchema = mongoose.Schema({
   lon: { type: Number },
   created_at: { type: Date, default: Date.now() },
   updated_at: { type: Date, default: Date.now() },
-  body: { type: String, required: true },
+  body: { type: String },
   images: [{ type: String }],
   comments: [{ type: mongoose.Types.ObjectId, ref: Comment }],
 })
