@@ -1,15 +1,21 @@
 import mongoose from 'mongoose'
 import normalize from 'normalize-mongoose'
+import User from './userModels.js'
 
-const commentSchema = mongoose.Schema({
-  type: { type: String },
-  khmer: { type: String },
-  firstname: { type: String },
-  lastname: { type: String },
-  comment: { type: String, required: true },
-  created_at: { type: Date, default: Date.now() },
-  updated_at: { type: Date, default: Date.now() },
-})
+const commentSchema = mongoose.Schema(
+  {
+    type: { type: String },
+    khmer: { type: String },
+    user: { type: mongoose.Types.ObjectId, ref: User },
+    comment: { type: String, required: true },
+  },
+  {
+    timestamps: {
+      createdAt: 'created_at',
+      updatedAt: 'updated_at',
+    },
+  }
+)
 
 commentSchema.plugin(normalize)
 

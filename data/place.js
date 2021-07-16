@@ -11,7 +11,7 @@ const places = [
     lon: 122.593,
     body: '<b>This place is really good</b>',
     images: [''],
-    comments: [''],
+    comments: [],
   },
   {
     type: 'place',
