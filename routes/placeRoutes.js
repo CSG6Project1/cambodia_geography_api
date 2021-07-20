@@ -1,5 +1,5 @@
 import express from 'express'
-import paginatedResult from '../middlewares/paginateMiddleware.js'
+import paginatedResult from '../middlewares/placeMiddleware.js'
 import commentResult from '../middlewares/commentMiddleware.js'
 import Place from '../models/placeModels.js'
 import Comment from '../models/commentModels.js'

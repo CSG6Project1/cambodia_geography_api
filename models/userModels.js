@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema(
     email: { type: String, unique: true },
     password: { type: String },
     isAdmin: { type: Boolean, default: false },
-    credential_id: { type: String },
+    credential_id: [{ type: String }],
     profile_img: { type: String },
   },
   {
