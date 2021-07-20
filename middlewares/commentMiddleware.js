@@ -1,4 +1,5 @@
 import asyncHandler from 'express-async-handler'
+import Place from '../models/placeModels.js'
 
 const linkPaginate = (id, increase, decrease, listQuery, first, last) => {
   let base_URL = `${process.env.HOST}/places/${id}/comments`
@@ -119,17 +120,33 @@ const commentResult = (model, populateText) =>
     }
 
     try {
-      data = await model
-        .findById(id)
-        .select('comments -_id')
-        .populate({
-          path: 'comments',
-          options: {
-            limit,
-            skip: startIndex,
-          },
-        })
-        .exec()
+      if (startIndex === 0) {
+        data = await model
+          .findById(id)
+          .select('comments -_id')
+          .populate({
+            path: 'comments',
+            options: {
+              limit,
+            },
+          })
+          .exec()
+      } else {
+        data = await model
+          .findById(id)
+          .select('comments -_id')
+          .populate({
+            path: 'comments',
+            options: {
+              limit,
+              skip: startIndex,
+            },
+          })
+          .exec()
+      }
+
+      console.log(data)
+
       res.links = links
       res.data = data.comments
       res.meta = meta

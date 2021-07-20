@@ -4,6 +4,7 @@ import connectDB from './config/db.js'
 import placeRoutes from './routes/placeRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import commentRoutes from './routes/commentRoutes.js'
 
 dotenv.config()
 connectDB()
