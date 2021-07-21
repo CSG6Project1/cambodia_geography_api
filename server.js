@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import placeRoutes from './routes/placeRoutes.js'
+import commentRoutes from './routes/commentRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 
 dotenv.config()
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/places', placeRoutes)
+app.use('/comment', commentRoutes)
 app.use('/user', userRoutes)
 const PORT = process.env.PORT || 5000
 

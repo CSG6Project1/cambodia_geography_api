@@ -71,6 +71,18 @@ const paginatedResult = (model, populateText) =>
     meta.total_count = modelLength
     meta.total_pages = Math.ceil(modelLength / limit)
 
+    if (endIndex === modelLength) {
+      links.self = linkPaginate(false, false, listQuery, false, false)
+      links.first = linkPaginate(false, false, listQuery, true, false)
+      links.last = linkPaginate(
+        false,
+        false,
+        listQuery,
+        false,
+        Math.ceil(modelLength / limit)
+      )
+    }
+
     if (endIndex < modelLength) {
       links.self = linkPaginate(false, false, listQuery, false, false)
       if (page + 1 <= Math.ceil(modelLength / limit)) {
@@ -81,6 +93,16 @@ const paginatedResult = (model, populateText) =>
         links.prev = linkPaginate(false, true, listQuery, false, false)
       }
 
+      links.first = linkPaginate(false, false, listQuery, true, false)
+      links.last = linkPaginate(
+        false,
+        false,
+        listQuery,
+        false,
+        Math.ceil(modelLength / limit)
+      )
+    } else if (endIndex > modelLength) {
+      links.self = linkPaginate(false, false, listQuery, false, false)
       links.first = linkPaginate(false, false, listQuery, true, false)
       links.last = linkPaginate(
         false,
@@ -116,28 +138,28 @@ const paginatedResult = (model, populateText) =>
           .find()
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else if (province_code && !type) {
         data = await model
           .find({ province_code })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else if (!province_code && type) {
         data = await model
           .find({ type })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else {
         data = await model
           .find({ province_code, type })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       }
 
