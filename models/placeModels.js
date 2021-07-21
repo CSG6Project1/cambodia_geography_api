@@ -27,6 +27,16 @@ const placeSchema = mongoose.Schema(
 
 placeSchema.plugin(normalize)
 
+placeSchema.virtual('comment_length', {
+  ref: Comment, // model to use for matching
+  localField: 'comments', // from `localField` i.e., Place
+  foreignField: '_id', // is equal to `foreignField` of Comment schema
+  count: true, //only get the number of docs
+})
+
+placeSchema.set('toObject', { virtuals: true })
+placeSchema.set('toJSON', { virtuals: true })
+
 const Place = mongoose.model('Places', placeSchema)
 
 export default Place

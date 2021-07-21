@@ -34,4 +34,6 @@ const getPlaceDetail = asyncHandler(async (req, res) => {
   }
 })
 
-export { getPlaces, getPlaceDetail }
+const deletePlace = asyncHandler(async (req, res) => {})
+
+export { getPlaces, getPlaceDetail, deletePlace }

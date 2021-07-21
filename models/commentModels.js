@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import normalize from 'normalize-mongoose'
 import User from './userModels.js'
+import Place from './placeModels.js'
 
 const commentSchema = mongoose.Schema(
   {

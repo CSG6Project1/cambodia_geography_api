@@ -116,28 +116,28 @@ const paginatedResult = (model, populateText) =>
           .find()
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else if (province_code && !type) {
         data = await model
           .find({ province_code })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else if (!province_code && type) {
         data = await model
           .find({ type })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       } else {
         data = await model
           .find({ province_code, type })
           .limit(limit)
           .skip(startIndex)
-          .populate(populateText)
+          .populate({ path: 'comment_length', count: true })
           .exec()
       }
 
