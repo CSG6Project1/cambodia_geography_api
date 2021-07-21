@@ -11,11 +11,9 @@ import {
 import { getComments } from '../controllers/commentController.js'
 const router = express.Router()
 
-router
-  .route('/')
-  .get(paginatedResult(Place, 'comments'), getPlaces)
-  .delete(deletePlace)
-router.route('/:id').get(getPlaceDetail)
+router.route('/').get(paginatedResult(Place, 'comments'), getPlaces)
+
+router.route('/:id').get(getPlaceDetail).delete(deletePlace)
 router.route('/:id/comments').get(commentResult(Place, 'comments'), getComments)
 
 export default router

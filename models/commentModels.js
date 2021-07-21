@@ -5,8 +5,7 @@ import Place from './placeModels.js'
 
 const commentSchema = mongoose.Schema(
   {
-    type: { type: String },
-    khmer: { type: String },
+    type: { type: String, default: 'comment' },
     user: { type: mongoose.Types.ObjectId, ref: User },
     comment: { type: String, required: true },
   },

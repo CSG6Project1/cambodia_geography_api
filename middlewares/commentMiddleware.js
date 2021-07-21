@@ -53,6 +53,19 @@ const commentResult = (model, populateText) =>
       listQuery.push({ name: 'page', value: page })
     }
 
+    if (endIndex === modelLength) {
+      links.self = linkPaginate(id, false, false, listQuery, false, false)
+      links.first = linkPaginate(id, false, false, listQuery, true, false)
+      links.last = linkPaginate(
+        id,
+        false,
+        false,
+        listQuery,
+        false,
+        Math.ceil(modelLength / limit)
+      )
+    }
+
     if (endIndex < modelLength) {
       links.self = linkPaginate(id, false, false, listQuery, false, false)
       if (page + 1 <= Math.ceil(modelLength / limit)) {
@@ -63,6 +76,17 @@ const commentResult = (model, populateText) =>
         links.prev = linkPaginate(id, false, true, listQuery, false, false)
       }
 
+      links.first = linkPaginate(id, false, false, listQuery, true, false)
+      links.last = linkPaginate(
+        id,
+        false,
+        false,
+        listQuery,
+        false,
+        Math.ceil(modelLength / limit)
+      )
+    } else if (endIndex > modelLength) {
+      links.self = linkPaginate(id, false, false, listQuery, false, false)
       links.first = linkPaginate(id, false, false, listQuery, true, false)
       links.last = linkPaginate(
         id,
