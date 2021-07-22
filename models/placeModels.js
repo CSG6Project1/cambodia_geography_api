@@ -2,6 +2,14 @@ import mongoose from 'mongoose'
 import normalize from 'normalize-mongoose'
 import Comment from './commentModels.js'
 
+const imageSchema = mongoose.Schema(
+  {
+    image_id: String,
+    image_url: String,
+  },
+  { _id: false }
+)
+
 const placeSchema = mongoose.Schema(
   {
     type: { type: String },
@@ -14,7 +22,7 @@ const placeSchema = mongoose.Schema(
     lat: { type: Number },
     lon: { type: Number },
     body: { type: String },
-    images: [{ type: String }],
+    images: [imageSchema],
     comments: [{ type: mongoose.Types.ObjectId, ref: Comment }],
   },
   {
@@ -25,8 +33,6 @@ const placeSchema = mongoose.Schema(
   }
 )
 
-placeSchema.plugin(normalize)
-
 placeSchema.virtual('comment_length', {
   ref: Comment, // model to use for matching
   localField: 'comments', // from `localField` i.e., Place
@@ -34,8 +40,7 @@ placeSchema.virtual('comment_length', {
   count: true, //only get the number of docs
 })
 
-placeSchema.set('toObject', { virtuals: true })
-placeSchema.set('toJSON', { virtuals: true })
+placeSchema.plugin(normalize)
 
 const Place = mongoose.model('Places', placeSchema)
 

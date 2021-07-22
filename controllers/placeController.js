@@ -2,6 +2,8 @@ import asyncHandler from 'express-async-handler'
 import Comment from '../models/commentModels.js'
 import Place from '../models/placeModels.js'
 
+import cloudinary from '../config/cloudinary.js'
+
 const getPlaces = asyncHandler(async (req, res) => {
   const links = res.links
   const data = res.data
@@ -25,8 +27,11 @@ const getPlaceDetail = asyncHandler(async (req, res) => {
   }
   try {
     const place = await Place.findById(id).populate('comments')
-    res.send({ place })
-    return
+    if (place) {
+      res.send({ place })
+    } else {
+      res.send({ message: 'Place not found' })
+    }
   } catch (error) {
     res.send({
       message: 'Place not found Invalid Id',
@@ -41,6 +46,11 @@ const deletePlace = asyncHandler(async (req, res) => {
   try {
     const place = await Place.findByIdAndRemove(id)
     if (place) {
+      if (Object.keys(place.images).length !== 0) {
+        place.images.forEach((img) => {
+          cloudinary.uploader.destroy(img.image_id)
+        })
+      }
       await place.comments.map(async (comment) => {
         await Comment.findByIdAndRemove(comment)
       })
@@ -59,61 +69,99 @@ const deletePlace = asyncHandler(async (req, res) => {
   }
 })
 
-const createPlace = asyncHandler(async (req, res) => {
-  const createQuery = {}
+const createPlace = asyncHandler(
+  async (req, res) => {
+    const createQuery = {}
 
-  if (req.body.type) {
-    createQuery.type = req.body.type
-  }
-  if (req.body.english) {
-    createQuery.english = req.body.english
-  }
-  if (req.body.khmer) {
-    createQuery.khmer = req.body.khmer
-  }
-  if (req.body.province_code) {
-    createQuery.province_code = req.body.province_code
-  }
-  if (req.body.district_code) {
-    createQuery.district_code = req.body.district_code
-  }
-  if (req.body.commune_code) {
-    createQuery.commune_code = req.body.commune_code
-  }
-  if (req.body.village_code) {
-    createQuery.village_code = req.body.village_code
-  }
-  if (req.body.lat) {
-    createQuery.lat = req.body.lat
-  }
-  if (req.body.lon) {
-    createQuery.lon = req.body.lon
-  }
-  if (req.body.body) {
-    createQuery.body = req.body.body
-  }
-
-  if (req.body.images) {
-    createQuery.images = req.body.images
-  }
-
-  try {
-    const place = await Place.create(createQuery)
-    if (place) {
-      res.send({
-        message: 'Place created',
-      })
+    if (req.body.type) {
+      createQuery.type = req.body.type
+    }
+    if (req.body.english) {
+      createQuery.english = req.body.english
+    }
+    if (req.body.khmer) {
+      createQuery.khmer = req.body.khmer
+    }
+    if (req.body.province_code) {
+      createQuery.province_code = req.body.province_code
+    }
+    if (req.body.district_code) {
+      createQuery.district_code = req.body.district_code
     } else {
       res.send({
-        message: 'Place not created',
+        message: 'District code must be filled',
       })
     }
-  } catch (error) {
+    if (req.body.commune_code) {
+      createQuery.commune_code = req.body.commune_code
+    }
+    if (req.body.village_code) {
+      createQuery.village_code = req.body.village_code
+    }
+    if (req.body.lat) {
+      createQuery.lat = req.body.lat
+    }
+    if (req.body.lon) {
+      createQuery.lon = req.body.lon
+    }
+    if (req.body.body) {
+      createQuery.body = req.body.body
+    }
+
+    try {
+      const place = await Place.create(createQuery)
+      if (req.files) {
+        req.files.forEach(async (file) => {
+          const addImg = await Place.findById(place._id)
+          cloudinary.uploader.upload(
+            file.path,
+            { folder: 'images' },
+            async (error, result) => {
+              if (error) {
+                res.send({
+                  message: error,
+                })
+                return
+              } else {
+                const img = {
+                  image_id: result.public_id,
+                  image_url: result.secure_url,
+                }
+
+                addImg.images.push(img)
+                addImg.save()
+              }
+            }
+          )
+        })
+
+        res.send({
+          message: 'Place Created',
+        })
+      } else {
+        const place = await Place.create(createQuery)
+        if (place) {
+          res.send({
+            message: 'Place created',
+          })
+        } else {
+          res.send({
+            message: 'Place not created',
+          })
+        }
+      }
+    } catch (error) {
+      res.send({
+        message: error,
+      })
+    }
+  },
+  (error, req, res, next) => {
     res.send({
-      message: 'Discrict code must be fill',
+      message: error.message,
     })
   }
-})
+)
 
 const updatePlace = asyncHandler(async (req, res) => {
   const id = req.params.id
@@ -153,11 +201,16 @@ const updatePlace = asyncHandler(async (req, res) => {
   try {
     const place = await Place.findByIdAndUpdate(id, updateQuery, { new: true })
     if (req.body.images) {
-      req.body.images.map((img) => {
-        place.images.pull(img)
-      })
+      req.body.images.forEach(async (img) => {
+        const place = await Place.findByIdAndUpdate(
+          id,
+          { $pull: { images: { image_id: img } } },
+          { new: true }
+        )
+        place.save()
 
-      place.save()
+        cloudinary.uploader.destroy(img)
+      })
     }
 
     if (place) {
