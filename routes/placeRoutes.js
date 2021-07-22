@@ -22,10 +22,10 @@ const upload = multer({
 
 router
   .route('/')
-  .get(paginatedResult(Place, 'comments'), getPlaces)
+  .get(getPlaces(Place))
   .post(upload.array('images', 10), createPlace)
 
 router.route('/:id').get(getPlaceDetail).delete(deletePlace).put(updatePlace)
-router.route('/:id/comments').get(commentResult(Place, 'comments'), getComments)
+router.route('/:id/comments').get(getComments(Place))
 
 export default router
