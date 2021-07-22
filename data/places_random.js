@@ -10,11 +10,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -27,8 +24,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -41,8 +38,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.1578565502459,
     body: '',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -55,11 +52,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.1578565502459,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -72,8 +66,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.1578565502459,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -86,11 +80,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: '',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -103,11 +94,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.18149925024555,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -120,8 +108,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 122.593,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -134,11 +122,8 @@ const places_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -151,8 +136,8 @@ const places_random = [
     lat: 135.2039,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -165,11 +150,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.18149925024555,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -182,8 +164,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.18149925024555,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -196,11 +178,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -213,11 +192,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.18149925024555,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -230,11 +206,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.051250835383,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -247,8 +220,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.18149925024555,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -261,8 +234,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -275,11 +248,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -292,11 +262,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.18149925024555,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -309,11 +276,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.1578565502459,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -326,11 +290,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.1578565502459,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -343,11 +304,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.1578565502459,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -360,11 +318,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.01734762756038,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -377,8 +332,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -391,11 +346,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -408,11 +360,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -425,11 +374,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -442,11 +388,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 104.1578565502459,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -459,11 +402,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 122.593,
     body: '',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -476,11 +416,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.01734762756038,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -493,11 +430,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 103.65155873315233,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -510,8 +444,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -524,11 +458,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -541,11 +472,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 103.65155873315233,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -558,8 +486,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.01734762756038,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -572,8 +500,8 @@ const places_random = [
     lat: 135.2039,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -586,11 +514,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.1578565502459,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -603,11 +528,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -620,11 +542,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 103.65155873315233,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -637,8 +556,8 @@ const places_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -651,11 +570,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.051250835383,
     body: '',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -668,8 +584,8 @@ const places_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -682,11 +598,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 104.051250835383,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -699,11 +612,8 @@ const places_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -716,11 +626,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.051250835383,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -733,11 +640,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -750,11 +654,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.18149925024555,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -767,8 +668,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 103.65155873315233,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -781,11 +682,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -798,8 +696,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.051250835383,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -812,8 +710,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -826,8 +724,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -840,11 +738,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.18149925024555,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -857,11 +752,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -874,11 +766,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -891,11 +780,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -908,11 +794,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -925,11 +808,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.01734762756038,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -942,11 +822,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -959,11 +836,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -976,11 +850,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -993,11 +864,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 104.051250835383,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1010,8 +878,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.01734762756038,
     body: '',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1024,11 +892,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: '',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1041,11 +906,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.051250835383,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1058,11 +920,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.01734762756038,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1075,11 +934,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.1578565502459,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1092,11 +948,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.1578565502459,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1109,11 +962,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1126,11 +976,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: '',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1143,11 +990,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.18149925024555,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1160,11 +1004,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 103.65155873315233,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1177,11 +1018,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.051250835383,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1194,11 +1032,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1211,11 +1046,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 104.1578565502459,
     body: '',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1228,11 +1060,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1245,11 +1074,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1262,11 +1088,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1279,11 +1102,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.051250835383,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1296,11 +1116,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1313,11 +1130,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1330,11 +1144,8 @@ const places_random = [
     lat: 135.2039,
     lon: 103.65155873315233,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1347,11 +1158,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 103.65155873315233,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1364,11 +1172,8 @@ const places_random = [
     lat: 10.658770751039778,
     lon: 122.593,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1381,11 +1186,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.18149925024555,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1398,11 +1200,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: 'ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោឬឧទ្យានជាតិភ្នំបូកគោមានទីតាំងស្ថិតនៅក្នុងស្រុកទឹកឈូខេត្តកំពត។ ភ្នំបូកគោមានកម្ពស់ ១០៧៥ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រនិងមានចម្ងាយប្រមាណ ១១គីឡូម៉ែត្រពីក្រុងកំពតទៅកាន់ជើងភ្នំនិងចម្ងាយ ៣២គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញនៅឆ្នាំ១៩១៧ ដោយជនជាតិបារាំងនិងត្រូវបានអភិវឌ្ឍឲ្យទៅជារមណីយដ្ឋាននៅឆ្នាំ១៩២១ ក្នុងរជ្ជកាលព្រះបាទស៊ីសុវត្ថិ។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1415,11 +1214,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1432,8 +1228,8 @@ const places_random = [
     lat: 10.630035094887255,
     lon: 104.01734762756038,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1446,11 +1242,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 104.01734762756038,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1463,11 +1256,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1480,11 +1270,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.1578565502459,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1497,11 +1284,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.01734762756038,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1514,11 +1298,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.051250835383,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1531,11 +1312,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 104.01734762756038,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71161752.jpg',
-      'https://thumbs.dreamstime.com/b/abandoned-christian-church-top-bokor-mountain-preah-monivong-national-park-kampot-cambodia-kep-71163269.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1548,11 +1326,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 104.1578565502459,
     body: 'វត្តសំពៅប្រាំដែលត្រូវបានគេចាត់ទុកថាជាវត្តព្រះពុទ្ធខ្ពស់ជាងគេនៅកម្ពុជាគឺជាទីកន្លែងបែបសាសនាដ៏មានភាពទាក់ទាញ។ ឈ្មោះវត្តសំពៅប្រាំនេះមានន័យថាប្រាសាទទូកប្រាំដែលជាឯកសារយោងសម្រាប់ទ្រង់ទ្រាយថ្មធំនិងរាបស្មើនៅក្បែរនោះមានបណ្តោយ ១០ ម៉ែត្រគុណនឹង ១០ ម៉ែត្រទ្រង់ទ្រាយធម្មជាតិទាំងនេះបង្ហាញពីរូបភាពនៃទូកដែលដាក់ឈ្មោះវត្តនោះ។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1565,11 +1340,8 @@ const places_random = [
     lat: 135.2039,
     lon: 104.051250835383,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1582,11 +1354,8 @@ const places_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://tripsary.s3.amazonaws.com/uploads/sub_location/cover_photo/96/standard_kayak-park-cover.jpg',
-      'https://avocado-app.s3.amazonaws.com/uploads/cms/image_gallery/image/1/kampot_20l.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1599,8 +1368,8 @@ const places_random = [
     lat: 10.49895392838263,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1613,11 +1382,8 @@ const places_random = [
     lat: 10.668064871653021,
     lon: 122.593,
     body: 'មានទីតាំងស្ថិតនៅជិតរមណីយដ្ឋានទឹកឈូតាមបណ្តោយដងទន្លេកំពង់បាយដែលមានចម្ងាយប្រហែល ៨.៥ គីឡូម៉ែត្រខាងជើងពីរង្វង់មូលធូរេន។ អ្នកប្រហែលជាគិតថាវាមិនមែនជាទីតាំងងាយស្រួលនោះទេប៉ុន្តែតាមពិតវាជាជំរើសដ៏ល្អឥតខ្ចោះសម្រាប់ភ្ញៀវទេសចរដែលចង់ទទួលបាននូវឱកាសពិសេសមួយ។ វាផ្តល់ជូននូវហ្សីបលីន, ដើមឈើរ៉ូប, បារអណ្តែតទូកលេងហ្គេមលើមេឃនិងបឹងជាច្រើនទៀត។ នៅពេលនិយាយអំពីសកម្មភាពនៅខេត្តកំពតអ្នកខ្លះប្រហែលជាគិតអំពីការឡើងភ្នំ។ ទោះយ៉ាងណាក៏ដោយសម្រាប់អ្នកដែលចង់បានបទពិសោធរំភើបរីករាយយើងសូមណែនាំអ្នកឱ្យទៅសួនឧទ្យាន។',
-    images: [
-      'https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/10/og-image-for-waterfall-attractions-in-cambodia.jpg',
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/09/rsz_popokvil_waterfall.jpg',
-    ],
-    comments: [''],
+
+    comments: [],
   },
   {
     type: 'place',
@@ -1630,8 +1396,8 @@ const places_random = [
     lat: 10.610683946483933,
     lon: 122.593,
     body: 'ទឹកជ្រោះពពកវិលស្ថិតនៅលើភ្នំបូកគោដែលជាទិសដៅពេញនិយមសម្រាប់ភ្ញៀវទេសចរក្នុងខេត្តកំពតដោយសារអាកាសធាតុត្រជាក់និងភ្នំដែលមានទេសភាពដ៏ស្រស់ស្អាត។ វាពិតជារីករាយណាស់ក្នុងការធ្វើដំណើរទៅកាន់ទីនោះ មិនត្រឹមតែប៉ុណ្ណោះ អ្នកក៏អាចមើលឃើញពីជីវិតសត្វព្រៃគួរឱ្យចាប់អារម្មណ៍មួយចំនួនដូចជាសត្វកំប្រុកក្រហមឬសត្វស្វា។ ទោះបីពេលមកដល់ទឹកជ្រោះអាចនឹងមានការលំបាកបន្តិចប៉ុន្តែនៅពេលដែលអ្នកបានឃើញដោយផ្ទាល់នូវសម្រស់ធម្មជាតិនៃទឹកធ្លាក់បន្ទាប់មកអ្នកប្រាកដជាដឹងច្បាស់ហើយថាវាពិតជាសក្តិសមនឹងការខិតខំរបស់អ្នក។',
-    images: [''],
-    comments: [''],
+
+    comments: [],
   },
 ]
 

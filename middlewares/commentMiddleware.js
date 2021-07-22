@@ -145,8 +145,6 @@ const commentResult = (model, populateText) =>
           .exec()
       }
 
-      console.log(data)
-
       res.links = links
       res.data = data.comments
       res.meta = meta

@@ -10,9 +10,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -26,10 +24,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -43,7 +38,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -57,10 +52,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -74,10 +66,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -91,9 +80,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -107,9 +94,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -123,10 +108,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -140,10 +122,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -157,9 +136,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -173,9 +150,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -189,7 +164,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -203,9 +178,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -219,10 +192,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -236,9 +206,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -252,10 +220,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -269,9 +234,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -285,10 +248,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -302,10 +262,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -319,10 +276,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -336,10 +290,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -353,9 +304,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -369,9 +318,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -385,9 +332,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -401,9 +346,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -417,10 +360,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -434,9 +374,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -450,10 +388,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -467,9 +402,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -483,10 +416,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -500,9 +430,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -516,10 +444,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -533,7 +458,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -547,9 +472,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -563,9 +486,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -579,10 +500,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -596,10 +514,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -613,9 +528,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -629,10 +542,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -646,7 +556,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -660,10 +570,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -677,10 +584,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -694,10 +598,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -711,10 +612,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -728,10 +626,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -745,9 +640,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -761,10 +654,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -778,10 +668,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -795,10 +682,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -812,10 +696,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -829,10 +710,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -846,7 +724,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -860,7 +738,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -874,9 +752,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -890,9 +766,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -906,10 +780,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -923,10 +794,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -940,10 +808,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -957,10 +822,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -974,9 +836,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -990,7 +850,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -1004,7 +864,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -1018,9 +878,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1034,10 +892,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -1051,10 +906,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -1068,9 +920,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1084,10 +934,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -1101,9 +948,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1117,10 +962,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1280x900/900/90042437.jpg',
-      'https://pix10.agoda.net/hotelImages/1622444/-1/a4c564d83a0b16b2625c0d62b342eae0.jpg?s=1024x768',
-    ],
+
     comments: [''],
   },
   {
@@ -1134,9 +976,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1150,10 +990,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1167,9 +1004,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1183,9 +1018,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1199,9 +1032,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1215,10 +1046,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1232,9 +1060,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1248,10 +1074,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1265,10 +1088,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1282,9 +1102,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1298,10 +1116,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1315,7 +1130,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -1329,10 +1144,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1346,9 +1158,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1362,10 +1172,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -1379,10 +1186,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1396,7 +1200,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -1410,10 +1214,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'ស្ថិតនៅចំងាយ4គ.មពីទីរួមខេត្តកំពតផ្ទះសំណាក់ហ្គេសហាកំពតអេកូផ្តល់ជូនភ្ញៀវនូវកន្លែងស្នាក់នៅសាមញ្ញនិងមានតំលៃសមរម្យ។កន្លែងចតរថយន្តឥតគិតថ្លៃត្រូវបានផ្តល់ជូនដល់អ្នកដែលបើកឡាននិងបើកវ៉ាយហ្វាយឥតគិតថ្លៃអាចរកបាននៅនឹងកន្លែង។បន្ទប់ត្រូវបានបំពាក់ដោយគ្រឿងបរិក្ខារមូលដ្ឋានរួមមានពូកមុងមុងនិងកង្ហារ។សម្ភារៈបន្ទប់ទឹកត្រូវបានចែករំលែក។បុគ្គលិកអាចរៀបចំឱ្យអ្នករីករាយនឹងសកម្មភាពក្រៅផ្សេងៗគ្នាដូចជាការនេសាទជិះកង់និងទូកកាណូ។ផ្ទះសំណាក់ហ្គេសសាកំពតអេកូអេកក៏មានកន្លែងបោកគក់ផងដែរ។ទាំងអាហារក្នុងស្រុកនិងអន្តរជាតិនឹងត្រូវបានបម្រើនៅភោជនីយដ្ឋានពីនឹងកន្លែង។ស្រាបៀរក្នុងស្រុកនិងជម្រើសស្រាដ៍រីករាយនៅបារ៍។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1427,10 +1228,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1444,9 +1242,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1460,10 +1256,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1477,9 +1270,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1493,9 +1284,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: '',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1509,10 +1298,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://cf.bstatic.com/images/hotel/max1024x768/195/195942644.jpg',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1526,9 +1312,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Ffoods%2Ftertulia.jpg?alt=media&token=2c71961e-502b-4ed2-a379-1a80e41753ee',
-    ],
+
     comments: [''],
   },
   {
@@ -1542,9 +1326,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1558,10 +1340,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://m.facebook.com/tpokmedia/photos/pcb.3691234994260494/3691222504261743/?type=3&source=49&ref=bookmarks',
-      'https://z-m-scontent.fpnh5-4.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/123662219_3691222510928409_1446167200565489394_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=MMBc3UUi2LkAX-Ggq3P&_nc_ad=z-m&_nc_cid=1595&_nc_eh=0df1c28da239defe5f2c40eac0ab23f1&_nc_ht=z-m-scontent.fpnh5-4.fna&tp=14&oh=ed3c3f6fbccc1af2f9406470360603a9&oe=5FD24BB5',
-    ],
+
     comments: [''],
   },
   {
@@ -1575,10 +1354,7 @@ const restaurant_random = [
     lat: 135.2039,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Fgenesha.webp?alt=media&token=a19d2e78-7551-43b1-bafb-5b9df9e0e145',
-      'https://firebasestorage.googleapis.com/v0/b/romduoltravel.appspot.com/o/kompot%2Faccomodations%2Feden-eco-village.jpg?alt=media&token=561925b0-444e-4467-96b8-7a5eed802052',
-    ],
+
     comments: [''],
   },
   {
@@ -1592,9 +1368,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បឹងកាឡូ ឫស្សី ឬក៏គេច្រើនហៅថា Bamboo Bungalow មានទីតាំងស្ថិតនៅ ភូមិអូរតូច សង្កាត់អណ្ដូងខ្មែរ ក្រុងកំពត ខេត្តកំពត និងមានចម្ងាយប្រហែល ~3km ពីរង្វង់មូល​ធូរេន។',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
   {
@@ -1608,7 +1382,7 @@ const restaurant_random = [
     lat: 0,
     lon: 122.593,
     body: 'បានបង្កើតឡើងក្នុងឆ្នាំ2006កាហ្វេរបស់យើងគឺជាកន្លែងធ្វើការដែលមានបម្រើអាហារពេលព្រឹកដ៏អស្ចារ្យនិងអាហារថ្ងៃត្រង់ដែលមានរសជាតិឈ្ងុយឆ្ងាញ់។',
-    images: [''],
+
     comments: [''],
   },
   {
@@ -1622,9 +1396,7 @@ const restaurant_random = [
     lat: 0,
     lon: 0,
     body: '<b>This place is really good</b>',
-    images: [
-      'https://www.madmonkeyhostels.com/wp-content/uploads/2017/06/Epic-Arts-Cafe-copy.jpg',
-    ],
+
     comments: [''],
   },
 ]
