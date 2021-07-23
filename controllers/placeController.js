@@ -385,27 +385,59 @@ const updatePlace = asyncHandler(async (req, res) => {
   }
 
   try {
-    const place = await Place.findByIdAndUpdate(id, updateQuery, { new: true })
-    if (req.body.images) {
-      req.body.images.forEach(async (img) => {
+    if (req.body.removeImages) {
+      const images = req.body.removeImages
+      console.log(typeof images)
+      images.forEach(async (img) => {
         const place = await Place.findByIdAndUpdate(
           id,
           { $pull: { images: { id: img } } },
           { new: true }
         )
         place.save()
-
         cloudinary.uploader.destroy(img)
       })
     }
 
-    if (place) {
+    if (req.files) {
+      req.files.forEach(async (file) => {
+        const updatePlace = await Place.findById(id)
+        cloudinary.uploader.upload(
+          file.path,
+          { folder: 'images' },
+          async (error, result) => {
+            if (error) {
+              res.send({
+                message: error,
+              })
+              return
+            } else {
+              const img = {
+                type: 'image',
+                id: result.public_id,
+                url: result.secure_url,
+              }
+
+              updatePlace.images.push(img)
+              updatePlace.save()
+            }
+          }
+        )
+      })
+
+      const place = await Place.findByIdAndUpdate(id, updateQuery, {
+        new: true,
+      })
       res.send({
         message: 'Place updated',
       })
     } else {
+      const place = await Place.findByIdAndUpdate(id, updateQuery, {
+        new: true,
+      })
+
       res.send({
-        message: 'Place not updated',
+        message: 'Place Updated',
       })
     }
   } catch (error) {

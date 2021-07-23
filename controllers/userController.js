@@ -1,4 +1,5 @@
 import asyncHandler from 'express-async-handler'
+import cloudinary from '../config/cloudinary.js'
 import User from '../models/userModels.js'
 import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
 
@@ -220,4 +221,78 @@ const userDetail = asyncHandler(async (req, res) => {
   })
 })
 
-export { userLogin, userRegister, userList, userDetail }
+const userUpdate = asyncHandler(async (req, res) => {
+  const jwt_role = req.role
+  const userId = req.body.userId
+  const updateQuery = {}
+
+  if (req.body.role && jwt_role === 'admin') {
+    updateQuery.role = req.body.role
+  }
+
+  if (!req.body.userId) {
+    res.send({
+      message: 'Provide userId to update',
+    })
+  }
+
+  if (req.body.username) {
+    updateQuery.username = req.body.username
+  }
+
+  try {
+    if (req.body.removeImages) {
+      const user = await User.findByIdAndUpdate(
+        userId,
+        {
+          $unset: { profile_img: 1 },
+        },
+        { new: true }
+      )
+      user.save()
+      cloudinary.uploader.destroy(req.body.removeImages)
+    }
+
+    if (req.file) {
+      cloudinary.uploader.upload(
+        req.file.path,
+        { folder: 'images' },
+        async (error, result) => {
+          if (error) {
+            res.send({
+              message: error,
+            })
+            return
+          } else {
+            updateQuery.profile_img = {
+              type: 'image',
+              id: result.public_id,
+              url: result.secure_url,
+            }
+
+            const user = await User.findByIdAndUpdate(userId, updateQuery, {
+              new: true,
+            })
+
+            user.save()
+          }
+        }
+      )
+    } else {
+      const user = await User.findByIdAndUpdate(userId, updateQuery, {
+        new: true,
+      })
+      user.save()
+    }
+
+    res.send({
+      message: 'User updated',
+    })
+  } catch (error) {
+    res.send({
+      message: error,
+    })
+  }
+})
+
+export { userLogin, userRegister, userList, userDetail, userUpdate }

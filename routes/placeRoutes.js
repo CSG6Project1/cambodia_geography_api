@@ -28,7 +28,7 @@ router
   .route('/:id')
   .get(getPlaceDetail)
   .delete(authMiddleware, deletePlace)
-  .put(authMiddleware, updatePlace)
+  .put(authMiddleware, upload.array('images', 10), updatePlace)
 router.route('/:id/comments').get(getComments(Place))
 
 export default router
