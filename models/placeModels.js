@@ -4,8 +4,9 @@ import Comment from './commentModels.js'
 
 const imageSchema = mongoose.Schema(
   {
-    image_id: String,
-    image_url: String,
+    id: String,
+    type: String,
+    url: String,
   },
   { _id: false }
 )
@@ -39,6 +40,9 @@ placeSchema.virtual('comment_length', {
   foreignField: '_id', // is equal to `foreignField` of Comment schema
   count: true, //only get the number of docs
 })
+
+placeSchema.set('toObject', { virtuals: true })
+placeSchema.set('toJSON', { virtuals: true })
 
 placeSchema.plugin(normalize)
 
