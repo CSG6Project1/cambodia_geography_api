@@ -201,13 +201,21 @@ const getPlaceDetail = asyncHandler(async (req, res) => {
 
 const deletePlace = asyncHandler(async (req, res) => {
   const id = req.params.id
+  const role = req.role
+
+  if (role !== 'admin') {
+    res.status(401).send({
+      message: 'You are not admin',
+    })
+    return
+  }
 
   try {
     const place = await Place.findByIdAndRemove(id)
     if (place) {
       if (Object.keys(place.images).length !== 0) {
         place.images.forEach((img) => {
-          cloudinary.uploader.destroy(img.image_id)
+          cloudinary.uploader.destroy(img.id)
         })
       }
       await place.comments.map(async (comment) => {
@@ -231,6 +239,15 @@ const deletePlace = asyncHandler(async (req, res) => {
 const createPlace = asyncHandler(
   async (req, res) => {
     const createQuery = {}
+
+    const role = req.role
+
+    if (role !== 'admin') {
+      res.status(401).send({
+        message: 'You are not admin',
+      })
+      return
+    }
 
     if (req.body.type) {
       createQuery.type = req.body.type
@@ -326,6 +343,15 @@ const createPlace = asyncHandler(
 const updatePlace = asyncHandler(async (req, res) => {
   const id = req.params.id
   const updateQuery = {}
+
+  const role = req.role
+
+  if (role !== 'admin') {
+    res.status(401).send({
+      message: 'You are not admin',
+    })
+    return
+  }
 
   if (req.body.type) {
     updateQuery.type = req.body.type

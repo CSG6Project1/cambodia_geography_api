@@ -1,6 +1,4 @@
 import express from 'express'
-import paginatedResult from '../middlewares/placeMiddleware.js'
-import commentResult from '../middlewares/commentMiddleware.js'
 import Place from '../models/placeModels.js'
 import Comment from '../models/commentModels.js'
 import multer from 'multer'
@@ -13,6 +11,7 @@ import {
   updatePlace,
 } from '../controllers/placeController.js'
 import { getComments } from '../controllers/commentController.js'
+import authMiddleware from '../middlewares/authMiddleware.js'
 const router = express.Router()
 
 const upload = multer({
@@ -23,9 +22,13 @@ const upload = multer({
 router
   .route('/')
   .get(getPlaces(Place))
-  .post(upload.array('images', 10), createPlace)
+  .post(authMiddleware, upload.array('images', 10), createPlace)
 
-router.route('/:id').get(getPlaceDetail).delete(deletePlace).put(updatePlace)
+router
+  .route('/:id')
+  .get(getPlaceDetail)
+  .delete(authMiddleware, deletePlace)
+  .put(authMiddleware, updatePlace)
 router.route('/:id/comments').get(getComments(Place))
 
 export default router

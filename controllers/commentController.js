@@ -160,6 +160,7 @@ const getComments = (model) =>
 const createComment = asyncHandler(async (req, res) => {
   const placeId = req.body.placeId
   const comment = req.body.comment
+  const userId = req.userId
 
   if (!placeId) {
     res.send({
@@ -172,7 +173,7 @@ const createComment = asyncHandler(async (req, res) => {
   }
 
   try {
-    const createdComment = await Comment.create({ comment })
+    const createdComment = await Comment.create({ user: userId, comment })
     if (createdComment) {
       const place = await Place.findByIdAndUpdate(placeId)
       place.comments.push(createdComment._id)
@@ -195,6 +196,15 @@ const createComment = asyncHandler(async (req, res) => {
 const updateComment = asyncHandler(async (req, res) => {
   const id = req.params.id
   const comment = req.body.comment
+  const userId = req.userId
+  const cmt = await Comment.findById(id)
+
+  if (cmt.user !== userId) {
+    res.send({
+      message: 'You can only update your own comment',
+    })
+    return
+  }
 
   if (!comment) {
     res.send({
@@ -217,6 +227,16 @@ const updateComment = asyncHandler(async (req, res) => {
 const deleteComment = asyncHandler(async (req, res) => {
   const id = req.params.id
   const placeId = req.body.placeId
+  const userId = req.userId
+
+  const comment = await Comment.findById(id)
+
+  if (comment.user !== userId) {
+    res.send({
+      message: 'You can only delete your own comment',
+    })
+    return
+  }
 
   if (!placeId) {
     res.send({

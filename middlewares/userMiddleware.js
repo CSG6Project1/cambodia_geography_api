@@ -8,8 +8,8 @@ const userEmail = asyncHandler(async (req, res, next) => {
     const password = req.body.password
     const user = await User.findOne({ email })
     if (user && password && (await user.matchPassword(password))) {
-      const accessToken = generateToken(user._id, user.isAdmin)
-      const refreshToken = generateRefreshToken(user._id, user.isAdmin)
+      const accessToken = generateToken(user._id, user.role)
+      const refreshToken = generateRefreshToken(user._id, user.role)
 
       const response = {
         access_token: accessToken,
@@ -41,8 +41,8 @@ const userCredential = asyncHandler(async (req, res, next) => {
     const credential_id = req.body.id_token
     const user = await User.findOne({ credential_id })
     if (user) {
-      const accessToken = generateToken(user._id, user.isAdmin)
-      const refreshToken = generateRefreshToken(user._id, user.isAdmin)
+      const accessToken = generateToken(user._id, user.role)
+      const refreshToken = generateRefreshToken(user._id, user.role)
       const response = {
         access_token: accessToken,
         token_type: 'Bearer',
@@ -90,7 +90,7 @@ const userRefreshToken = asyncHandler(async (req, res, next) => {
 
       const { id } = user.id
 
-      const accessToken = generateToken(id, user.isAdmin)
+      const accessToken = generateToken(id, user.role)
 
       const response = {
         access_token: accessToken,
