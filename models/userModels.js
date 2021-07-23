@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema(
     username: { type: String },
     email: { type: String, unique: true },
     password: { type: String },
-    isAdmin: { type: Boolean, default: false },
+    role: { type: String, enum: ['user', 'admin'], default: 'user' },
     credential_id: [{ type: String }],
     profile_img: { type: String },
   },
