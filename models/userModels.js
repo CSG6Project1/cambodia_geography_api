@@ -2,6 +2,15 @@ import mongoose from 'mongoose'
 import normalize from 'normalize-mongoose'
 import bcrypt from 'bcryptjs'
 
+const imageSchema = mongoose.Schema(
+  {
+    id: String,
+    type: String,
+    url: String,
+  },
+  { _id: false }
+)
+
 const userSchema = mongoose.Schema(
   {
     username: { type: String },
@@ -9,7 +18,7 @@ const userSchema = mongoose.Schema(
     password: { type: String },
     role: { type: String, enum: ['user', 'admin'], default: 'user' },
     credential_id: [{ type: String }],
-    profile_img: { type: String },
+    profile_img: imageSchema,
   },
   {
     timestamps: {
