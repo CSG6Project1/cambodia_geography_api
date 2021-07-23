@@ -210,4 +210,14 @@ const userList = (model) =>
     res.send(response)
   })
 
-export { userLogin, userRegister, userList }
+const userDetail = asyncHandler(async (req, res) => {
+  const userId = req.id
+
+  const user = await User.findById(userId).select('-password -credential_id')
+
+  res.send({
+    data: user,
+  })
+})
+
+export { userLogin, userRegister, userList, userDetail }
