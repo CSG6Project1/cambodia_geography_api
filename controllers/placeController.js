@@ -283,8 +283,9 @@ const createPlace = asyncHandler(
                 return
               } else {
                 const img = {
-                  image_id: result.public_id,
-                  image_url: result.secure_url,
+                  type: 'image',
+                  id: result.public_id,
+                  url: result.secure_url,
                 }
 
                 addImg.images.push(img)
@@ -363,7 +364,7 @@ const updatePlace = asyncHandler(async (req, res) => {
       req.body.images.forEach(async (img) => {
         const place = await Place.findByIdAndUpdate(
           id,
-          { $pull: { images: { image_id: img } } },
+          { $pull: { images: { id: img } } },
           { new: true }
         )
         place.save()
