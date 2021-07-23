@@ -207,7 +207,7 @@ const deletePlace = asyncHandler(async (req, res) => {
     if (place) {
       if (Object.keys(place.images).length !== 0) {
         place.images.forEach((img) => {
-          cloudinary.uploader.destroy(img.image_id)
+          cloudinary.uploader.destroy(img.id)
         })
       }
       await place.comments.map(async (comment) => {
