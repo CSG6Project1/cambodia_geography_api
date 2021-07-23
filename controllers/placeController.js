@@ -265,7 +265,7 @@ const createPlace = asyncHandler(
       createQuery.district_code = req.body.district_code
     } else {
       res.send({
-        message: 'District code must be filled',
+        message: 'Province code must be filled',
       })
     }
     if (req.body.commune_code) {
