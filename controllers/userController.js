@@ -230,6 +230,12 @@ const userUpdate = asyncHandler(async (req, res) => {
     updateQuery.role = req.body.role
   }
 
+  if (jwt_id !== userId && jwt_role !== 'admin') {
+    res.send({
+      message: 'You can only edit your own profile',
+    })
+  }
+
   if (!req.body.userId) {
     res.send({
       message: 'Provide userId to update',
