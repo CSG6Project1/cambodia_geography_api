@@ -260,13 +260,13 @@ const createPlace = asyncHandler(
     }
     if (req.body.province_code) {
       createQuery.province_code = req.body.province_code
-    }
-    if (req.body.district_code) {
-      createQuery.district_code = req.body.district_code
     } else {
       res.send({
         message: 'Province code must be filled',
       })
+    }
+    if (req.body.district_code) {
+      createQuery.district_code = req.body.district_code
     }
     if (req.body.commune_code) {
       createQuery.commune_code = req.body.commune_code
@@ -335,7 +335,7 @@ const createPlace = asyncHandler(
   },
   (error, req, res, next) => {
     res.send({
-      message: error.message,
+      message: error,
     })
   }
 )
