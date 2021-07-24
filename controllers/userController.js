@@ -2,6 +2,15 @@ import asyncHandler from 'express-async-handler'
 import cloudinary from '../config/cloudinary.js'
 import User from '../models/userModels.js'
 import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
+import multer from 'multer'
+import { storage, fileFilter } from '../config/multer.js'
+
+const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+})
+
+const singelUpload = upload.single('image')
 
 const userLogin = asyncHandler(async (req, res) => {
   const response = res.response
@@ -221,84 +230,93 @@ const userDetail = asyncHandler(async (req, res) => {
   })
 })
 
-const userUpdate = asyncHandler(async (req, res) => {
-  const jwt_role = req.role
-  const userId = req.body.userId
-  const updateQuery = {}
+const userUpdate = (req, res) => {
+  singelUpload(
+    req,
+    res,
+    asyncHandler(async (err) => {
+      if (err) {
+        return res.status(500).send({ message: err.message })
+      }
+      const jwt_role = req.role
+      const userId = req.body.userId
+      const updateQuery = {}
 
-  if (req.body.role && jwt_role === 'admin') {
-    updateQuery.role = req.body.role
-  }
+      if (req.body.role && jwt_role === 'admin') {
+        updateQuery.role = req.body.role
+      }
 
-  if (jwt_id !== userId && jwt_role !== 'admin') {
-    res.send({
-      message: 'You can only edit your own profile',
-    })
-  }
+      if (jwt_id !== userId && jwt_role !== 'admin') {
+        res.send({
+          message: 'You can only edit your own profile',
+        })
+      }
 
-  if (!req.body.userId) {
-    res.send({
-      message: 'Provide userId to update',
-    })
-  }
+      if (!req.body.userId) {
+        res.send({
+          message: 'Provide userId to update',
+        })
+      }
 
-  if (req.body.username) {
-    updateQuery.username = req.body.username
-  }
+      if (req.body.username) {
+        updateQuery.username = req.body.username
+      }
 
-  try {
-    if (req.body.removeImages) {
-      const user = await User.findByIdAndUpdate(
-        userId,
-        {
-          $unset: { profile_img: 1 },
-        },
-        { new: true }
-      )
-      user.save()
-      cloudinary.uploader.destroy(req.body.removeImages)
-    }
-
-    if (req.file) {
-      cloudinary.uploader.upload(
-        req.file.path,
-        { folder: 'images' },
-        async (error, result) => {
-          if (error) {
-            res.send({
-              message: error,
-            })
-            return
-          } else {
-            updateQuery.profile_img = {
-              type: 'image',
-              id: result.public_id,
-              url: result.secure_url,
-            }
-
-            const user = await User.findByIdAndUpdate(userId, updateQuery, {
-              new: true,
-            })
-
-            user.save()
-          }
+      try {
+        if (req.body.removeImages) {
+          const user = await User.findByIdAndUpdate(
+            userId,
+            {
+              $unset: { profile_img: 1 },
+            },
+            { new: true }
+          )
+          user.save()
+          cloudinary.uploader.destroy(req.body.removeImages)
         }
-      )
-    } else {
-      const user = await User.findByIdAndUpdate(userId, updateQuery, {
-        new: true,
-      })
-      user.save()
-    }
 
-    res.send({
-      message: 'User updated',
+        if (req.file) {
+          cloudinary.uploader.upload(
+            req.file.path,
+            { folder: 'images' },
+            async (error, result) => {
+              if (error) {
+                res.send({
+                  message: error,
+                })
+                return
+              } else {
+                updateQuery.profile_img = {
+                  type: 'image',
+                  id: result.public_id,
+                  url: result.secure_url,
+                }
+
+                const user = await User.findByIdAndUpdate(userId, updateQuery, {
+                  new: true,
+                })
+
+                user.save()
+              }
+            }
+          )
+        } else {
+          const user = await User.findByIdAndUpdate(userId, updateQuery, {
+            new: true,
+          })
+          user.save()
+        }
+
+        res.send({
+          message: 'User updated',
+        })
+      } catch (error) {
+        res.send({
+          message: error,
+        })
+      }
     })
-  } catch (error) {
-    res.send({
-      message: error,
-    })
-  }
-})
+  )
+}
 
 export { userLogin, userRegister, userList, userDetail, userUpdate }
