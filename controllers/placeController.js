@@ -3,6 +3,15 @@ import Comment from '../models/commentModels.js'
 import Place from '../models/placeModels.js'
 
 import cloudinary from '../config/cloudinary.js'
+import multer from 'multer'
+import { storage, fileFilter } from '../config/multer.js'
+
+const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+})
+
+const uploadImage = upload.array('images', 10)
 
 const linkPaginate = (increase, decrease, listQuery, first, last) => {
   let base_URL = `${process.env.HOST}/places`
@@ -236,215 +245,226 @@ const deletePlace = asyncHandler(async (req, res) => {
   }
 })
 
-const createPlace = asyncHandler(
-  async (req, res) => {
-    const createQuery = {}
+const createPlace = (req, res) => {
+  uploadImage(
+    req,
+    res,
+    asyncHandler(async (err) => {
+      if (err) {
+        return res.status(500).send({ message: err.message })
+      }
+      const createQuery = {}
 
-    const role = req.role
+      const role = req.role
 
-    if (role !== 'admin') {
-      res.status(401).send({
-        message: 'You are not admin',
-      })
-      return
-    }
-
-    if (req.body.type) {
-      createQuery.type = req.body.type
-    }
-    if (req.body.english) {
-      createQuery.english = req.body.english
-    }
-    if (req.body.khmer) {
-      createQuery.khmer = req.body.khmer
-    }
-    if (req.body.province_code) {
-      createQuery.province_code = req.body.province_code
-    } else {
-      res.send({
-        message: 'Province code must be filled',
-      })
-    }
-    if (req.body.district_code) {
-      createQuery.district_code = req.body.district_code
-    }
-    if (req.body.commune_code) {
-      createQuery.commune_code = req.body.commune_code
-    }
-    if (req.body.village_code) {
-      createQuery.village_code = req.body.village_code
-    }
-    if (req.body.lat) {
-      createQuery.lat = req.body.lat
-    }
-    if (req.body.lon) {
-      createQuery.lon = req.body.lon
-    }
-    if (req.body.body) {
-      createQuery.body = req.body.body
-    }
-
-    try {
-      const place = await Place.create(createQuery)
-      if (req.files) {
-        req.files.forEach(async (file) => {
-          const addImg = await Place.findById(place._id)
-          cloudinary.uploader.upload(
-            file.path,
-            { folder: 'images' },
-            async (error, result) => {
-              if (error) {
-                res.send({
-                  message: error,
-                })
-                return
-              } else {
-                const img = {
-                  type: 'image',
-                  id: result.public_id,
-                  url: result.secure_url,
-                }
-
-                addImg.images.push(img)
-                addImg.save()
-              }
-            }
-          )
+      if (role !== 'admin') {
+        res.status(401).send({
+          message: 'You are not admin',
         })
+        return
+      }
 
-        res.send({
-          message: 'Place Created',
-        })
+      if (req.body.type) {
+        createQuery.type = req.body.type
+      }
+      if (req.body.english) {
+        createQuery.english = req.body.english
+      }
+      if (req.body.khmer) {
+        createQuery.khmer = req.body.khmer
+      }
+      if (req.body.province_code) {
+        createQuery.province_code = req.body.province_code
       } else {
+        res.send({
+          message: 'Province code must be filled',
+        })
+      }
+      if (req.body.district_code) {
+        createQuery.district_code = req.body.district_code
+      }
+      if (req.body.commune_code) {
+        createQuery.commune_code = req.body.commune_code
+      }
+      if (req.body.village_code) {
+        createQuery.village_code = req.body.village_code
+      }
+      if (req.body.lat) {
+        createQuery.lat = req.body.lat
+      }
+      if (req.body.lon) {
+        createQuery.lon = req.body.lon
+      }
+      if (req.body.body) {
+        createQuery.body = req.body.body
+      }
+
+      try {
         const place = await Place.create(createQuery)
-        if (place) {
+        if (req.files) {
+          req.files.forEach(async (file) => {
+            const addImg = await Place.findById(place._id)
+            cloudinary.uploader.upload(
+              file.path,
+              { folder: 'images' },
+              async (error, result) => {
+                if (error) {
+                  res.send({
+                    message: error,
+                  })
+                  return
+                } else {
+                  const img = {
+                    type: 'image',
+                    id: result.public_id,
+                    url: result.secure_url,
+                  }
+
+                  addImg.images.push(img)
+                  addImg.save()
+                }
+              }
+            )
+          })
+
           res.send({
-            message: 'Place created',
+            message: 'Place Created',
           })
         } else {
-          res.send({
-            message: 'Place not created',
+          const place = await Place.create(createQuery)
+          if (place) {
+            res.send({
+              message: 'Place created',
+            })
+          } else {
+            res.send({
+              message: 'Place not created',
+            })
+          }
+        }
+      } catch (error) {
+        res.send({
+          message: error,
+        })
+      }
+    })
+  )
+}
+
+const updatePlace = (req, res) => {
+  uploadImage(
+    req,
+    res,
+    asyncHandler(async (err) => {
+      if (err) {
+        return res.status(500).send({ message: err.message })
+      }
+
+      const id = req.params.id
+      const updateQuery = {}
+      const role = req.role
+
+      if (role !== 'admin') {
+        res.status(401).send({
+          message: 'You are not admin',
+        })
+        return
+      }
+
+      if (req.body.type) {
+        updateQuery.type = req.body.type
+      }
+      if (req.body.english) {
+        updateQuery.english = req.body.english
+      }
+      if (req.body.khmer) {
+        updateQuery.khmer = req.body.khmer
+      }
+      if (req.body.province_code) {
+        updateQuery.province_code = req.body.province_code
+      }
+      if (req.body.district_code) {
+        updateQuery.district_code = req.body.district_code
+      }
+      if (req.body.commune_code) {
+        updateQuery.commune_code = req.body.commune_code
+      }
+      if (req.body.village_code) {
+        updateQuery.village_code = req.body.village_code
+      }
+      if (req.body.lat) {
+        updateQuery.lat = req.body.lat
+      }
+      if (req.body.lon) {
+        updateQuery.lon = req.body.lon
+      }
+      if (req.body.body) {
+        updateQuery.body = req.body.body
+      }
+
+      try {
+        if (req.body.removeImages) {
+          const images = req.body.removeImages
+
+          images.forEach(async (img) => {
+            const place = await Place.findByIdAndUpdate(
+              id,
+              { $pull: { images: { id: img } } },
+              { new: true }
+            )
+            place.save()
+            cloudinary.uploader.destroy(img)
           })
         }
-      }
-    } catch (error) {
-      res.send({
-        message: error,
-      })
-    }
-  },
-  (error, req, res, next) => {
-    res.send({
-      message: error,
-    })
-  }
-)
 
-const updatePlace = asyncHandler(async (req, res) => {
-  const id = req.params.id
-  const updateQuery = {}
+        if (req.files) {
+          req.files.forEach(async (file) => {
+            const updatePlace = await Place.findById(id)
+            cloudinary.uploader.upload(
+              file.path,
+              { folder: 'images' },
+              async (error, result) => {
+                if (error) {
+                  res.send({
+                    message: error,
+                  })
+                  return
+                } else {
+                  const img = {
+                    type: 'image',
+                    id: result.public_id,
+                    url: result.secure_url,
+                  }
 
-  const role = req.role
-
-  if (role !== 'admin') {
-    res.status(401).send({
-      message: 'You are not admin',
-    })
-    return
-  }
-
-  if (req.body.type) {
-    updateQuery.type = req.body.type
-  }
-  if (req.body.english) {
-    updateQuery.english = req.body.english
-  }
-  if (req.body.khmer) {
-    updateQuery.khmer = req.body.khmer
-  }
-  if (req.body.province_code) {
-    updateQuery.province_code = req.body.province_code
-  }
-  if (req.body.district_code) {
-    updateQuery.district_code = req.body.district_code
-  }
-  if (req.body.commune_code) {
-    updateQuery.commune_code = req.body.commune_code
-  }
-  if (req.body.village_code) {
-    updateQuery.village_code = req.body.village_code
-  }
-  if (req.body.lat) {
-    updateQuery.lat = req.body.lat
-  }
-  if (req.body.lon) {
-    updateQuery.lon = req.body.lon
-  }
-  if (req.body.body) {
-    updateQuery.body = req.body.body
-  }
-
-  try {
-    if (req.body.removeImages) {
-      const images = req.body.removeImages
-      console.log(typeof images)
-      images.forEach(async (img) => {
-        const place = await Place.findByIdAndUpdate(
-          id,
-          { $pull: { images: { id: img } } },
-          { new: true }
-        )
-        place.save()
-        cloudinary.uploader.destroy(img)
-      })
-    }
-
-    if (req.files) {
-      req.files.forEach(async (file) => {
-        const updatePlace = await Place.findById(id)
-        cloudinary.uploader.upload(
-          file.path,
-          { folder: 'images' },
-          async (error, result) => {
-            if (error) {
-              res.send({
-                message: error,
-              })
-              return
-            } else {
-              const img = {
-                type: 'image',
-                id: result.public_id,
-                url: result.secure_url,
+                  updatePlace.images.push(img)
+                  updatePlace.save()
+                }
               }
+            )
+          })
 
-              updatePlace.images.push(img)
-              updatePlace.save()
-            }
-          }
-        )
-      })
+          const place = await Place.findByIdAndUpdate(id, updateQuery, {
+            new: true,
+          })
+          res.send({
+            message: 'Place updated',
+          })
+        } else {
+          const place = await Place.findByIdAndUpdate(id, updateQuery, {
+            new: true,
+          })
 
-      const place = await Place.findByIdAndUpdate(id, updateQuery, {
-        new: true,
-      })
-      res.send({
-        message: 'Place updated',
-      })
-    } else {
-      const place = await Place.findByIdAndUpdate(id, updateQuery, {
-        new: true,
-      })
-
-      res.send({
-        message: 'Place Updated',
-      })
-    }
-  } catch (error) {
-    res.send({
-      message: error,
+          res.send({
+            message: 'Place Updated',
+          })
+        }
+      } catch (error) {
+        res.send({
+          message: error,
+        })
+      }
     })
-  }
-})
+  )
+}
 
 export { getPlaces, getPlaceDetail, deletePlace, updatePlace, createPlace }
