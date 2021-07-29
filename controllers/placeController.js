@@ -330,17 +330,6 @@ const createPlace = (req, res) => {
           res.send({
             message: 'Place Created',
           })
-        } else {
-          const place = await Place.create(createQuery)
-          if (place) {
-            res.send({
-              message: 'Place created',
-            })
-          } else {
-            res.send({
-              message: 'Place not created',
-            })
-          }
         }
       } catch (error) {
         res.send({
