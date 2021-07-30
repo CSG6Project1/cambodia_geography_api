@@ -7,7 +7,7 @@ const authMiddleware = asyncHandler(async (req, res, next) => {
   if (authHeader) {
     try {
       token = authHeader.split(' ')[1]
-      const decoded = jwt.decode(token, process.env.JWT_SECRET)
+      const decoded = jwt.verify(token, process.env.JWT_SECRET)
       req.id = decoded.id
       req.role = decoded.role
       next()
