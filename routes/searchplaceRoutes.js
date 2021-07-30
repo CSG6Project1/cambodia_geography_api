@@ -3,33 +3,33 @@ import fuzzysearch from 'fuzzy-search'
 import Place from '../models/placeModels.js'
 const router = express.Router()
 
-///searchplaces/result?kw=
+///searchplaces/result?keyword=
 
 router.get("/result",(req,res)=>{
-    if(!req.query['kw']){
+    if(!req.query['keyword']){
         res.send({
-            message: "Please input keyword[kw]"})
+            message: "Please input keyword[keyword]"})
     }
     Place.find((err,docs)=>{
         if(!err){
             //searching
             const searcher = new fuzzysearch(docs,['khmer','english'],{caseSensitive: true})
-            const result = searcher.search(req.query['kw'])
+            const result = searcher.search(req.query['keyword'])
             //print some data
-            // console.log(req.query["kw"])
+            // console.log(req.query["keyword"])
             // console.log(result.length)
             // console.log("____________________________")
             //create temporary variable
-            let str_replace="<b>"+`${req.query['kw']}`+"</b>"
-            let str_toreplace = new RegExp(req.query['kw'],'g')
+            let str_replace="<b>"+`${req.query['keyword']}`+"</b>"
+            let str_toreplace = new RegExp(req.query['keyword'],'g')
             //make key into bold
-            if(req.query['kw'].charCodeAt(0) > 6000 && req.query['kw'].charCodeAt(0) < 6200){
+            if(req.query['keyword'].charCodeAt(0) > 6000 && req.query['keyword'].charCodeAt(0) < 6200){
                 for (const prop in result) {
                     let tmp = result[prop]["khmer"]
                     result[prop]["khmer"]=tmp.replace(str_toreplace,str_replace)
                 }
             }
-            if(req.query['kw'].charCodeAt(0) >= 48 && req.query['kw'].charCodeAt(0) < 130){
+            if(req.query['keyword'].charCodeAt(0) >= 48 && req.query['keyword'].charCodeAt(0) < 130){
                 for (const prop in result) {
                     let tmp = result[prop]["english"]
                     result[prop]["english"]=tmp.replace(str_toreplace,str_replace)
