@@ -239,6 +239,7 @@ const userUpdate = (req, res) => {
         return res.status(500).send({ message: err.message })
       }
       const jwt_role = req.role
+      const jwt_id = req.id
       const userId = req.body.userId
       const updateQuery = {}
 

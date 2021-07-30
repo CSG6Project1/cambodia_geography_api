@@ -130,6 +130,10 @@ const getComments = (model) =>
             options: {
               limit,
             },
+            populate: {
+              path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
+            },
           })
           .exec()
       } else {
@@ -138,9 +142,13 @@ const getComments = (model) =>
           .select('comments -_id')
           .populate({
             path: 'comments',
+
             options: {
               limit,
               skip: startIndex,
+            },
+            populate: {
+              path: 'user',
             },
           })
           .exec()
