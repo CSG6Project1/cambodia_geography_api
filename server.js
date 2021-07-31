@@ -8,11 +8,13 @@ import commentRoutes from './routes/commentRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
 import { userDetail } from './controllers/userController.js'
+import cors from 'cors'
 
 dotenv.config()
 connectDB()
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.send('API is running....')

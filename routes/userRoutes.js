@@ -4,6 +4,7 @@ import {
   userRegister,
   userList,
   userUpdate,
+  userDetail,
 } from '../controllers/userController.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
 import {
@@ -16,7 +17,10 @@ import User from '../models/userModels.js'
 const router = express.Router()
 
 router.route('/all').get(authMiddleware, userList(User))
-router.route('/').put(authMiddleware, userUpdate)
+router
+  .route('/')
+  .put(authMiddleware, userUpdate)
+  .get(authMiddleware, userDetail)
 router
   .route('/token')
   .post(userEmail, userCredential, userRefreshToken, userLogin)
