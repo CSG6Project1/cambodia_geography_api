@@ -168,7 +168,7 @@ const getComments = (model) =>
 const createComment = asyncHandler(async (req, res) => {
   const placeId = req.body.placeId
   const comment = req.body.comment
-  const userId = req.userId
+  const userId = req.id
 
   if (!placeId) {
     res.send({
