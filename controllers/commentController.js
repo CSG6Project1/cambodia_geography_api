@@ -149,6 +149,7 @@ const getComments = (model) =>
             },
             populate: {
               path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
             },
           })
           .exec()
