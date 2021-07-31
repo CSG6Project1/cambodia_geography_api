@@ -83,12 +83,13 @@ const userRefreshToken = asyncHandler(async (req, res, next) => {
         const response = {
           message: 'Invalid Token',
         }
+
         res.response = response
         res.statusCode = 401
         next()
       }
 
-      const { id } = user.id
+      const { id } = user
 
       const accessToken = generateToken(id, user.role)
 
