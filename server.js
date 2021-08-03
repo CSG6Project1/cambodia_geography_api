@@ -4,6 +4,7 @@ import connectDB from './config/db.js'
 import placeRoutes from './routes/placeRoutes.js'
 import searchplaceRoutes from './routes/searchplaceRoutes.js'
 import filterplaceRoutes from './routes/filterplaceRoutes.js'
+import autocompleterRoutes from './routes/autocompleterRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
@@ -23,6 +24,7 @@ app.get('/account', authMiddleware, userDetail)
 app.use('/places', placeRoutes)
 app.use('/searchplaces', searchplaceRoutes)
 app.use('/filterplaces', filterplaceRoutes)
+app.use('/autocompleter', autocompleterRoutes)
 app.use('/comment', commentRoutes)
 app.use('/user', userRoutes)
 
