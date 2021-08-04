@@ -235,23 +235,27 @@ const updateComment = asyncHandler(async (req, res) => {
 
 const deleteComment = asyncHandler(async (req, res) => {
   const id = req.params.id
-  const placeId = req.body.placeId
   const jwt_id = req.id
   const jwt_role = req.role
-
-  const ownComment = await Comment.findOne({ _id: id, user: jwt_id })
-
-  if (!ownComment && jwt_role !== 'admin') {
-    return res.send({
-      message: 'You can only delete your own comment',
-    })
+  try {
+    const ownComment = await Comment.findOne({ _id: id, user: jwt_id })
+    if (!ownComment && jwt_role !== 'admin') {
+      return res.send({
+        message: 'You can only delete your own comment',
+      })
+    }
+  } catch (error) {
+    return res.send({ message: 'Invalid Id' })
   }
 
+  const place = await Place.findOne({ comments: { $in: id } })
+  const placeId = place.id
   if (!placeId) {
     return res.send({
-      message: 'Place not found',
+      message: 'place not found',
     })
   }
+
   try {
     const deletedComment = await Comment.findByIdAndRemove(id)
     if (deletedComment) {
