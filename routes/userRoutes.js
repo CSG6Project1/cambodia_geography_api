@@ -5,6 +5,7 @@ import {
   userList,
   userUpdate,
   userDetail,
+  userDelete,
 } from '../controllers/userController.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
 import {
@@ -17,10 +18,11 @@ import User from '../models/userModels.js'
 const router = express.Router()
 
 router.route('/all').get(authMiddleware, userList(User))
+router.route('/').get(authMiddleware, userDetail)
 router
-  .route('/')
+  .route('/:id')
   .put(authMiddleware, userUpdate)
-  .get(authMiddleware, userDetail)
+  .delete(authMiddleware, userDelete)
 router
   .route('/token')
   .post(userEmail, userCredential, userRefreshToken, userLogin)

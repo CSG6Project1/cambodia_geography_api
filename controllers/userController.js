@@ -240,7 +240,7 @@ const userUpdate = (req, res) => {
       }
       const jwt_role = req.role
       const jwt_id = req.id
-      const userId = req.body.userId
+      const userId = req.params.id
       const updateQuery = {}
 
       if (req.body.role && jwt_role === 'admin') {
@@ -320,4 +320,37 @@ const userUpdate = (req, res) => {
   )
 }
 
-export { userLogin, userRegister, userList, userDetail, userUpdate }
+const userDelete = asyncHandler(async (req, res) => {
+  const id = req.params.id
+  const role = req.role
+
+  if (role !== 'admin') {
+    res.status(401).send({
+      message: 'You are not admin',
+    })
+    return
+  }
+
+  try {
+    const user = await User.findByIdAndRemove(id)
+    if (user) {
+      if (user.profile_img && user.profile_img.url) {
+        cloudinary.uploader.destroy(user.profile_img.id)
+      }
+
+      res.send({
+        message: 'User deleted',
+      })
+    } else {
+      res.send({
+        message: 'User not found',
+      })
+    }
+  } catch (error) {
+    res.send({
+      message: error,
+    })
+  }
+})
+
+export { userLogin, userRegister, userList, userDetail, userUpdate, userDelete }
