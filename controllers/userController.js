@@ -196,13 +196,13 @@ const userList = (model) =>
     try {
       if (filter) {
         data = await User.find({ role: filter })
-          .select('-password -email -credential_id')
+          .select('-password -credential_id')
           .limit(limit)
           .skip(startIndex)
           .exec()
       } else {
         data = await User.find()
-          .select('-password -email -credential_id')
+          .select('-password -credential_id')
           .limit(limit)
           .skip(startIndex)
           .exec()
