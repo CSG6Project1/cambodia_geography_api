@@ -248,14 +248,8 @@ const userUpdate = (req, res) => {
       }
 
       if (jwt_id !== userId && jwt_role !== 'admin') {
-        res.send({
+        return res.status(304).send({
           message: 'You can only edit your own profile',
-        })
-      }
-
-      if (!req.body.userId) {
-        res.send({
-          message: 'Provide userId to update',
         })
       }
 
