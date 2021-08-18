@@ -38,9 +38,14 @@ const userRegister = asyncHandler(async (req, res) => {
     })
 
     if (newUser) {
+      const accessToken = generateToken(newUser._id, newUser.role)
+      const refreshToken = generateRefreshToken(newUser._id, newUser.role)
       res.status(201).send({
-        username,
-        email,
+        access_token: accessToken,
+        refreshToken: refreshToken,
+        token_type: 'Bearer',
+        expires_in: 60 * 60 * 2,
+        created_at: Date.now(),
       })
     } else {
       res.status(406).send({
@@ -55,9 +60,14 @@ const userRegister = asyncHandler(async (req, res) => {
     })
 
     if (newUser) {
+      const accessToken = generateToken(newUser._id, newUser.role)
+      const refreshToken = generateRefreshToken(newUser._id, newUser.role)
       res.status(201).send({
-        username,
-        email,
+        access_token: accessToken,
+        refreshToken: refreshToken,
+        token_type: 'Bearer',
+        expires_in: 60 * 60 * 2,
+        created_at: Date.now(),
       })
     } else {
       res.status(403).send({
