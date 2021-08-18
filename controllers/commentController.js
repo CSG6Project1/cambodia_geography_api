@@ -3,7 +3,7 @@ import Comment from '../models/commentModels.js'
 import Place from '../models/placeModels.js'
 
 const linkPaginate = (id, increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/places/${id}/comments`
+  let base_URL = `${process.env.HOST}/api/places/${id}/comments`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'
@@ -23,7 +23,7 @@ const linkPaginate = (id, increase, decrease, listQuery, first, last) => {
 }
 
 const linkPaginateGroupBy = (increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/comment`
+  let base_URL = `${process.env.HOST}/api/comment`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'
@@ -158,7 +158,13 @@ const getCommentsGroupByPlace = (model) =>
           .limit(limit)
           .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate('comments')
+          .populate({
+            path: 'comments',
+            populate: {
+              path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
+            },
+          })
           .populate({
             path: 'comment_length',
             count: true,
@@ -170,7 +176,13 @@ const getCommentsGroupByPlace = (model) =>
           .limit(limit)
           .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate('comments')
+          .populate({
+            path: 'comments',
+            populate: {
+              path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
+            },
+          })
           .populate({
             path: 'comment_length',
             count: true,
@@ -182,7 +194,13 @@ const getCommentsGroupByPlace = (model) =>
           .limit(limit)
           .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate('comments')
+          .populate({
+            path: 'comments',
+            populate: {
+              path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
+            },
+          })
           .populate({
             path: 'comment_length',
             count: true,
@@ -194,7 +212,13 @@ const getCommentsGroupByPlace = (model) =>
           .limit(limit)
           .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate('comments')
+          .populate({
+            path: 'comments',
+            populate: {
+              path: 'user',
+              select: { _id: 1, username: 1, profile_img: 1 },
+            },
+          })
           .populate({
             path: 'comment_length',
             count: true,

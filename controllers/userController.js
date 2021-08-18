@@ -73,7 +73,7 @@ const userRegister = asyncHandler(async (req, res) => {
 })
 
 const linkPaginate = (increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/user/all`
+  let base_URL = `${process.env.HOST}/api/user/all`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'

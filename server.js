@@ -20,13 +20,13 @@ app.use(cors())
 app.get('/', (req, res) => {
   res.send('API is running....')
 })
-app.get('/account', authMiddleware, userDetail)
-app.use('/places', placeRoutes)
-app.use('/searchplaces', searchplaceRoutes)
-app.use('/filterplaces', filterplaceRoutes)
-app.use('/autocompleter', autocompleterRoutes)
-app.use('/comment', commentRoutes)
-app.use('/user', userRoutes)
+app.get('/api/account', authMiddleware, userDetail)
+app.use('/api/places', placeRoutes)
+app.use('/api/searchplaces', searchplaceRoutes)
+app.use('/api/filterplaces', filterplaceRoutes)
+app.use('/api/autocompleter', autocompleterRoutes)
+app.use('/api/comment', commentRoutes)
+app.use('/api/user', userRoutes)
 
 const PORT = process.env.PORT || 5000
 

@@ -14,7 +14,7 @@ const upload = multer({
 const uploadImage = upload.array('images', 10)
 
 const linkPaginate = (increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/places`
+  let base_URL = `${process.env.HOST}/api/places`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'

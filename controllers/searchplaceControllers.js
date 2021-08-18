@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler'
 import fuzzysearch from 'fuzzy-search'
 
 const linkPaginate = (increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/searchplaces/result`
+  let base_URL = `${process.env.HOST}/api/searchplaces/result`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'
