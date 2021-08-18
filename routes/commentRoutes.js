@@ -3,12 +3,18 @@ import {
   deleteComment,
   updateComment,
   createComment,
+  getCommentsGroupByPlace,
 } from '../controllers/commentController.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
+import Place from '../models/placeModels.js'
 
 const router = express.Router()
 
-router.route('/').post(authMiddleware, createComment)
+router
+  .route('/')
+  .get(getCommentsGroupByPlace(Place))
+  .post(authMiddleware, createComment)
+
 router
   .route('/:id')
   .delete(authMiddleware, deleteComment)
