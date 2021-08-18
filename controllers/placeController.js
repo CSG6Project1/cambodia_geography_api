@@ -147,29 +147,45 @@ const getPlaces = (model) =>
         data = await model
           .find()
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate({ path: 'comment_length', count: true })
+          .populate({
+            path: 'comment_length',
+            count: true,
+          })
           .exec()
       } else if (province_code && !type) {
         data = await model
           .find({ province_code })
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate({ path: 'comment_length', count: true })
+          .populate({
+            path: 'comment_length',
+            count: true,
+          })
           .exec()
       } else if (!province_code && type) {
         data = await model
           .find({ type })
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate({ path: 'comment_length', count: true })
+          .populate({
+            path: 'comment_length',
+            count: true,
+          })
           .exec()
       } else {
         data = await model
           .find({ province_code, type })
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
-          .populate({ path: 'comment_length', count: true })
+          .populate({
+            path: 'comment_length',
+            count: true,
+          })
           .exec()
       }
     } catch (error) {

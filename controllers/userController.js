@@ -198,12 +198,14 @@ const userList = (model) =>
         data = await User.find({ role: filter })
           .select('-password -credential_id')
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
           .exec()
       } else {
         data = await User.find()
           .select('-password -credential_id')
           .limit(limit)
+          .sort({ created_at: -1 })
           .skip(startIndex)
           .exec()
       }
