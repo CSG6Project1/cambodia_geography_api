@@ -147,8 +147,8 @@ const getPlaces = (model) =>
         data = await model
           .find()
           .limit(limit)
-          .sort({ created_at: -1 })
           .skip(startIndex)
+          .sort({ created_at: -1 })
           .populate({
             path: 'comment_length',
             count: true,
@@ -158,8 +158,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ province_code })
           .limit(limit)
-          .sort({ created_at: -1 })
           .skip(startIndex)
+          .sort({ created_at: -1 })
           .populate({
             path: 'comment_length',
             count: true,
@@ -169,8 +169,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ type })
           .limit(limit)
-          .sort({ created_at: -1 })
           .skip(startIndex)
+          .sort({ created_at: -1 })
           .populate({
             path: 'comment_length',
             count: true,
@@ -180,8 +180,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ province_code, type })
           .limit(limit)
-          .sort({ created_at: -1 })
           .skip(startIndex)
+          .sort({ created_at: -1 })
           .populate({
             path: 'comment_length',
             count: true,
