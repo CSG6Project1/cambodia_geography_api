@@ -147,8 +147,8 @@ const getPlaces = (model) =>
         data = await model
           .find()
           .limit(limit)
-          .skip(startIndex)
           .sort({ created_at: -1 })
+          .skip(startIndex)
           .populate({
             path: 'comment_length',
             count: true,
@@ -158,8 +158,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ province_code })
           .limit(limit)
-          .skip(startIndex)
           .sort({ created_at: -1 })
+          .skip(startIndex)
           .populate({
             path: 'comment_length',
             count: true,
@@ -169,8 +169,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ type })
           .limit(limit)
-          .skip(startIndex)
           .sort({ created_at: -1 })
+          .skip(startIndex)
           .populate({
             path: 'comment_length',
             count: true,
@@ -180,8 +180,8 @@ const getPlaces = (model) =>
         data = await model
           .find({ province_code, type })
           .limit(limit)
-          .skip(startIndex)
           .sort({ created_at: -1 })
+          .skip(startIndex)
           .populate({
             path: 'comment_length',
             count: true,
@@ -409,7 +409,7 @@ const updatePlace = (req, res) => {
 
       try {
         if (req.body.removeImages) {
-          const images = req.body.removeImages
+          const images = JSON.parse(req.body.removeImages)
 
           images.forEach(async (img) => {
             const place = await Place.findByIdAndUpdate(
