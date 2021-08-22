@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import cloudinary from '../config/cloudinary.js'
+import bcrypt from 'bcryptjs'
 import User from '../models/userModels.js'
 import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
 import multer from 'multer'
@@ -269,6 +270,17 @@ const userUpdate = (req, res) => {
         updateQuery.username = req.body.username
       }
 
+      if (req.body.old_password && req.body.new_password) {
+        const user = await User.findById(jwt_id)
+        if (user && (await user.matchPassword(req.body.old_password))) {
+          updateQuery.password = bcrypt.hashSync(req.body.new_password, 10)
+        } else {
+          return res.status(304).send({
+            message: 'Password is incorrect',
+          })
+        }
+      }
+
       try {
         if (req.body.removeImages) {
           const user = await User.findByIdAndUpdate(
@@ -311,6 +323,7 @@ const userUpdate = (req, res) => {
           const user = await User.findByIdAndUpdate(userId, updateQuery, {
             new: true,
           })
+
           user.save()
         }
 
