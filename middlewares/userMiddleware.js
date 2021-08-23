@@ -4,10 +4,6 @@ import jwt from 'jsonwebtoken'
 import { generateToken, generateRefreshToken } from '../utils/generateToken.js'
 import admin from 'firebase-admin'
 
-admin.initializeApp({
-  projectId: 'cambodia-geography',
-})
-
 const userEmail = asyncHandler(async (req, res, next) => {
   if (req.body.grant_type === 'password') {
     const email = req.body.email
