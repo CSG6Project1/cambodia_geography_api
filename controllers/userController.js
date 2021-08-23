@@ -5,6 +5,7 @@ import User from '../models/userModels.js'
 import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
 import multer from 'multer'
 import { storage, fileFilter } from '../config/multer.js'
+import Comment from '../models/commentModels.js'
 
 const upload = multer({
   storage: storage,
@@ -355,6 +356,17 @@ const userDelete = asyncHandler(async (req, res) => {
     if (user) {
       if (user.profile_img && user.profile_img.url) {
         cloudinary.uploader.destroy(user.profile_img.id)
+      }
+
+      try {
+        const comments = await Comment.find({ user: user._id })
+        if (comments) {
+          comments.forEach(async (comment) => {
+            const deleteComment = await Comment.findByIdAndRemove(comment._id)
+          })
+        }
+      } catch (error) {
+        console.log(error)
       }
 
       res.send({
