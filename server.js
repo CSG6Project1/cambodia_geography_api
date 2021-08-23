@@ -10,6 +10,11 @@ import userRoutes from './routes/userRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
 import { userDetail } from './controllers/userController.js'
 import cors from 'cors'
+import admin from 'firebase-admin'
+
+admin.initializeApp({
+  projectId: 'cambodia-geography',
+})
 
 dotenv.config()
 connectDB()

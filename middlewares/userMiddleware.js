@@ -2,6 +2,8 @@ import asyncHandler from 'express-async-handler'
 import User from '../models/userModels.js'
 import jwt from 'jsonwebtoken'
 import { generateToken, generateRefreshToken } from '../utils/generateToken.js'
+import admin from 'firebase-admin'
+
 const userEmail = asyncHandler(async (req, res, next) => {
   if (req.body.grant_type === 'password') {
     const email = req.body.email
@@ -39,28 +41,42 @@ const userEmail = asyncHandler(async (req, res, next) => {
 const userCredential = asyncHandler(async (req, res, next) => {
   if (req.body.grant_type === 'credential') {
     const credential_id = req.body.id_token
-    const user = await User.findOne({ credential_id })
-    if (user) {
-      const accessToken = generateToken(user._id, user.role)
-      const refreshToken = generateRefreshToken(user._id, user.role)
-      const response = {
-        access_token: accessToken,
-        token_type: 'Bearer',
-        expires_in: 60 * 60 * 2,
-        refresh_token: refreshToken,
-        created_at: Date.now(),
-      }
-      res.response = response
-      res.statusCode = 200
-      next()
-    } else {
-      const response = {
-        message: 'User not found',
-      }
-      res.response = response
-      res.statusCode = 401
-      next()
-    }
+    admin
+      .auth()
+      .verifyIdToken(credential_id)
+      .then(async (decodedToken) => {
+        const uid = decodedToken.uid
+        const user = await User.findOne({ credential_id: uid })
+        if (user) {
+          const accessToken = generateToken(user._id, user.role)
+          const refreshToken = generateRefreshToken(user._id, user.role)
+          const response = {
+            access_token: accessToken,
+            token_type: 'Bearer',
+            expires_in: 60 * 60 * 2,
+            refresh_token: refreshToken,
+            created_at: Date.now(),
+          }
+          res.response = response
+          res.statusCode = 200
+          next()
+        } else {
+          const response = {
+            message: 'User not found',
+          }
+          res.response = response
+          res.statusCode = 401
+          next()
+        }
+      })
+      .catch((error) => {
+        const response = {
+          message: error.message,
+        }
+        res.response = response
+        res.statusCode = 401
+        next()
+      })
   } else {
     next()
   }

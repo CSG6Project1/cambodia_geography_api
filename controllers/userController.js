@@ -7,6 +7,7 @@ import multer from 'multer'
 import { storage, fileFilter } from '../config/multer.js'
 import Comment from '../models/commentModels.js'
 import validator from 'validator'
+import admin from 'firebase-admin'
 
 const upload = multer({
   storage: storage,
@@ -25,9 +26,9 @@ const userRegister = asyncHandler(async (req, res) => {
   const username = req.body.username
   const email = req.body.email
   const password = req.body.password
-  const credential_id = req.body.credential_id
+  const id_token = req.body.id_token
 
-  if (!validator.isEmail(email)) {
+  if (email && !validator.isEmail(email) && !id_token) {
     return res.status(403).send({
       message: "Email isn't correct format",
     })
@@ -39,7 +40,7 @@ const userRegister = asyncHandler(async (req, res) => {
     res.send({
       message: 'Email is already existed',
     })
-  } else if (!user && !credential_id) {
+  } else if (!user && !id_token) {
     const newUser = await User.create({
       username,
       email,
@@ -61,28 +62,38 @@ const userRegister = asyncHandler(async (req, res) => {
         message: 'Invalid Data',
       })
     }
-  } else if (credential_id) {
-    const newUser = await User.create({
-      username,
-      email,
-      credential_id,
-    })
+  } else if (id_token) {
+    admin
+      .auth()
+      .verifyIdToken(id_token)
+      .then(async (decodedToken) => {
+        const uId = decodedToken.uid
+        const newUser = await User.create({
+          username,
+          credential_id: uId,
+        })
 
-    if (newUser) {
-      const accessToken = generateToken(newUser._id, newUser.role)
-      const refreshToken = generateRefreshToken(newUser._id, newUser.role)
-      res.status(201).send({
-        access_token: accessToken,
-        refreshToken: refreshToken,
-        token_type: 'Bearer',
-        expires_in: 60 * 60 * 2,
-        created_at: Date.now(),
+        if (newUser) {
+          const accessToken = generateToken(newUser._id, newUser.role)
+          const refreshToken = generateRefreshToken(newUser._id, newUser.role)
+          res.status(201).send({
+            access_token: accessToken,
+            refreshToken: refreshToken,
+            token_type: 'Bearer',
+            expires_in: 60 * 60 * 2,
+            created_at: Date.now(),
+          })
+        } else {
+          res.status(403).send({
+            message: 'Invalid Data',
+          })
+        }
       })
-    } else {
-      res.status(403).send({
-        message: 'Invalid Data',
+      .catch((error) => {
+        res.status(403).send({
+          message: error.message,
+        })
       })
-    }
   } else {
     res.status(401)
     res.send({
