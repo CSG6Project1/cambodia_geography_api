@@ -27,7 +27,7 @@ const userRegister = asyncHandler(async (req, res) => {
   const password = req.body.password
   const credential_id = req.body.credential_id
 
-  if (!validator.isEmail(email)) {
+  if (!validator.isEmail(email) && !credential_id) {
     return res.status(403).send({
       message: "Email isn't correct format",
     })
@@ -64,7 +64,6 @@ const userRegister = asyncHandler(async (req, res) => {
   } else if (credential_id) {
     const newUser = await User.create({
       username,
-      email,
       credential_id,
     })
 
