@@ -6,6 +6,7 @@ import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
 import multer from 'multer'
 import { storage, fileFilter } from '../config/multer.js'
 import Comment from '../models/commentModels.js'
+import validator from 'validator'
 
 const upload = multer({
   storage: storage,
@@ -25,6 +26,12 @@ const userRegister = asyncHandler(async (req, res) => {
   const email = req.body.email
   const password = req.body.password
   const credential_id = req.body.credential_id
+
+  if (!validator.isEmail(email)) {
+    return res.status(403).send({
+      message: "Email isn't correct format",
+    })
+  }
 
   const user = await User.findOne({ email })
   if (user) {
