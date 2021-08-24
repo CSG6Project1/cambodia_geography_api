@@ -7,6 +7,7 @@ import filterplaceRoutes from './routes/filterplaceRoutes.js'
 import autocompleterRoutes from './routes/autocompleterRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import verificationRoutes from './routes/verificationRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
 import { userDetail } from './controllers/userController.js'
 import cors from 'cors'
@@ -32,6 +33,7 @@ app.use('/api/filterplaces', filterplaceRoutes)
 app.use('/api/autocompleter', autocompleterRoutes)
 app.use('/api/comment', commentRoutes)
 app.use('/api/user', userRoutes)
+app.use('/confirmation', verificationRoutes)
 
 const PORT = process.env.PORT || 5000
 
