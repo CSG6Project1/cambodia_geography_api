@@ -33,7 +33,7 @@ app.use('/api/filterplaces', filterplaceRoutes)
 app.use('/api/autocompleter', autocompleterRoutes)
 app.use('/api/comment', commentRoutes)
 app.use('/api/user', userRoutes)
-app.use('/confirmation', verificationRoutes)
+app.use('/api/confirmation', verificationRoutes)
 
 const PORT = process.env.PORT || 5000
 

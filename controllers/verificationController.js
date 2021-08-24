@@ -25,13 +25,13 @@ const sendVerification = asyncHandler(async (req, res) => {
     expiresIn: '30s',
   })
 
-  const url = `${process.env.HOST}/confirmation/${emailToken}`
+  const url = `${process.env.HOST}/api/confirmation/${emailToken}`
   const subjectStr =
-    locale === 'kh'
+    locale === 'km'
       ? 'សូមបញ្ជាក់គណនីអ៊ីមែលរបស់អ្នក'
       : 'Please confirm your Email account'
   const htmlStr =
-    locale === 'kh'
+    locale === 'km'
       ? `សួស្តី,<br> សូមចុចលើតំណភ្ជាប់ដើម្បីផ្ទៀងផ្ទាត់អ៊ីមែលរបស់អ្នក </br><a href='${url}'>សូមចុចនៅទីនេះ</a> `
       : `Hello,<br> Please Click on the link to verify your email.<br><a href='${url}'>Click here to verify</a>`
   const info = await transporter.sendMail({
@@ -42,6 +42,7 @@ const sendVerification = asyncHandler(async (req, res) => {
   })
   return res.status(200).send({
     message: 'Message sent',
+    expires_in: '30',
   })
 })
 

@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler'
-import jwt from 'jsonwebtoken'
+import jwt, { decode } from 'jsonwebtoken'
 import User from '../models/userModels.js'
 
 const authMiddleware = asyncHandler(async (req, res, next) => {
@@ -12,12 +12,7 @@ const authMiddleware = asyncHandler(async (req, res, next) => {
 
       req.id = decoded.id
       req.role = decoded.role
-      const user = await User.findById(decoded.id)
-      if (user && user.email && !decoded.is_verify) {
-        return res.status(401).send({
-          message: 'You must verify your account first',
-        })
-      }
+      req.is_verify = decoded.is_verify
 
       next()
     } catch (error) {
