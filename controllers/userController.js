@@ -27,77 +27,92 @@ const userRegister = asyncHandler(async (req, res) => {
   const email = req.body.email
   const password = req.body.password
   const id_token = req.body.id_token
+  const grant_type = req.body.grant_type
 
-  if (email && !validator.isEmail(email) && !id_token) {
+  if (grant_type === 'password' && !validator.isEmail(email)) {
     return res.status(403).send({
       message: "Email isn't correct format",
     })
   }
 
-  const user = await User.findOne({ email })
-  if (user) {
-    res.status(402)
-    res.send({
-      message: 'Email is already existed',
-    })
-  } else if (!user && !id_token) {
-    const newUser = await User.create({
-      username,
-      email,
-      password,
-    })
-
-    if (newUser) {
-      const accessToken = generateToken(newUser._id, newUser.role)
-      const refreshToken = generateRefreshToken(newUser._id, newUser.role)
-      res.status(201).send({
-        access_token: accessToken,
-        refreshToken: refreshToken,
-        token_type: 'Bearer',
-        expires_in: 60 * 60 * 2,
-        created_at: Date.now(),
+  if (grant_type === 'password') {
+    const user = await User.findOne({ email })
+    if (user) {
+      res.status(402)
+      res.send({
+        message: 'Email is already existed',
       })
+    } else if (!user) {
+      const newUser = await User.create({
+        username,
+        email,
+        password,
+      })
+
+      if (newUser) {
+        const accessToken = generateToken(newUser._id, newUser.role)
+        const refreshToken = generateRefreshToken(newUser._id, newUser.role)
+        res.status(201).send({
+          access_token: accessToken,
+          refreshToken: refreshToken,
+          token_type: 'Bearer',
+          expires_in: 60 * 60 * 2,
+          created_at: Date.now(),
+        })
+      } else {
+        res.status(406).send({
+          message: 'Invalid Data',
+        })
+      }
+    }
+  } else if (grant_type === 'credential') {
+    if (id_token) {
+      admin
+        .auth()
+        .verifyIdToken(id_token)
+        .then(async (decodedToken) => {
+          const uId = decodedToken.uid
+          const user = await User.findOne({ credential_id: uId })
+          if (user) {
+            return res.status(403).send({
+              message: 'This account has already registered',
+            })
+          }
+          const newUser = await User.create({
+            username,
+            credential_id: uId,
+          })
+
+          if (newUser) {
+            const accessToken = generateToken(newUser._id, newUser.role)
+            const refreshToken = generateRefreshToken(newUser._id, newUser.role)
+            res.status(201).send({
+              access_token: accessToken,
+              refreshToken: refreshToken,
+              token_type: 'Bearer',
+              expires_in: 60 * 60 * 2,
+              created_at: Date.now(),
+            })
+          } else {
+            res.status(403).send({
+              message: 'Invalid Data',
+            })
+          }
+        })
+        .catch((error) => {
+          res.status(403).send({
+            message: error.message,
+          })
+        })
     } else {
-      res.status(406).send({
-        message: 'Invalid Data',
+      return res.status(403).send({
+        message: 'Id Token not Found',
       })
     }
-  } else if (id_token) {
-    admin
-      .auth()
-      .verifyIdToken(id_token)
-      .then(async (decodedToken) => {
-        const uId = decodedToken.uid
-        const newUser = await User.create({
-          username,
-          credential_id: uId,
-        })
-
-        if (newUser) {
-          const accessToken = generateToken(newUser._id, newUser.role)
-          const refreshToken = generateRefreshToken(newUser._id, newUser.role)
-          res.status(201).send({
-            access_token: accessToken,
-            refreshToken: refreshToken,
-            token_type: 'Bearer',
-            expires_in: 60 * 60 * 2,
-            created_at: Date.now(),
-          })
-        } else {
-          res.status(403).send({
-            message: 'Invalid Data',
-          })
-        }
-      })
-      .catch((error) => {
-        res.status(403).send({
-          message: error.message,
-        })
-      })
   } else {
     res.status(401)
     res.send({
-      message: 'Invalid Data',
+      message: 'Invalid grant type',
     })
   }
 })
