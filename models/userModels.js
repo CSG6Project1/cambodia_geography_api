@@ -14,11 +14,12 @@ const imageSchema = mongoose.Schema(
 const userSchema = mongoose.Schema(
   {
     username: { type: String },
-    email: { type: String, unique: true },
+    email: { type: String },
     password: { type: String },
     role: { type: String, enum: ['user', 'admin'], default: 'user' },
     credential_id: [{ type: String }],
     profile_img: imageSchema,
+    is_verify: { type: Boolean, default: false },
   },
   {
     timestamps: {
