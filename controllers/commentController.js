@@ -421,10 +421,10 @@ const createComment = asyncHandler(async (req, res) => {
 const updateComment = asyncHandler(async (req, res) => {
   const id = req.params.id
   const comment = req.body.comment
-  const userId = req.userId
+  const userId = req.id
   const cmt = await Comment.findById(id)
 
-  if (cmt.user !== userId) {
+  if (cmt.user.toString() !== userId) {
     res.send({
       message: 'You can only update your own comment',
     })
