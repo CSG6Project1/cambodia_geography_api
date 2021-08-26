@@ -89,6 +89,7 @@ const userRegister = asyncHandler(async (req, res) => {
           const newUser = await User.create({
             username,
             credential_id: uId,
+            is_verify: true,
           })
 
           if (newUser) {
