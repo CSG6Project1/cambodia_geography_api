@@ -6,6 +6,7 @@ import { generateRefreshToken, generateToken } from '../utils/generateToken.js'
 import multer from 'multer'
 import { storage, fileFilter } from '../config/multer.js'
 import Comment from '../models/commentModels.js'
+import Place from '../models/placeModels.js'
 import validator from 'validator'
 import admin from 'firebase-admin'
 
@@ -413,6 +414,9 @@ const userDelete = asyncHandler(async (req, res) => {
         if (comments) {
           comments.forEach(async (comment) => {
             const deleteComment = await Comment.findByIdAndRemove(comment._id)
+            const place = await Place.findOne({ comments: comment._id })
+            place.comments.pull({ _id: comment._id })
+            place.save()
           })
         }
       } catch (error) {
