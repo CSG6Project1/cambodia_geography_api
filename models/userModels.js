@@ -20,6 +20,7 @@ const userSchema = mongoose.Schema(
     credential_id: [{ type: String }],
     profile_img: imageSchema,
     is_verify: { type: Boolean, default: false },
+    providers: [{ type: String }],
   },
   {
     timestamps: {

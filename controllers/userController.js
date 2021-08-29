@@ -90,6 +90,7 @@ const userRegister = asyncHandler(async (req, res) => {
           const newUser = await User.create({
             username,
             credential_id: uId,
+            providers: decodedToken.firebase.sign_in_provider,
             is_verify: true,
           })
 
