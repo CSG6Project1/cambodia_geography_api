@@ -266,7 +266,11 @@ const createPlace = (req, res) => {
     req,
     res,
     asyncHandler(async (err) => {
-      if (err) {
+      if (err instanceof multer.MulterError) {
+        return res
+          .status(500)
+          .send({ message: 'You can upload only 10 images' })
+      } else if (err) {
         return res.status(500).send({ message: err.message })
       }
       const createQuery = {}
