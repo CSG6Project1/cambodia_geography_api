@@ -23,7 +23,23 @@ const linkPaginate = (increase, decrease, listQuery, first, last) => {
 
 const getFilterPlaces = (model) =>
   asyncHandler(async (req, res) => {
-    const places = await model.find()
+    const place = await model.find()
+    
+    function getplacetofilter(){
+      if (req.query['keyword']) {
+        const searcher2 = new fuzzysearch(place, ['khmer', 'english'], {
+          caseSensitive: true,
+        })
+        const result2 = searcher2.search(req.query['keyword'])
+        //console.log("This is result2 length: "+result2.length)
+        return result2
+      }
+      else{
+        return place
+      }
+    }
+    
+    const places = getplacetofilter()
 
     let province_search
     let district_search
