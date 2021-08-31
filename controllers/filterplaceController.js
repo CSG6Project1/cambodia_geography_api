@@ -204,6 +204,12 @@ const getFilterPlaces = (model) =>
       final_result = places
     }
 
+    //add comment length to search result
+    for (const prop in final_result) {
+      final_result[prop]["comment_length"]=final_result[prop]["comments"].length
+    }
+    
+
     if (final_result.length != 0) {
       const page = parseInt(req.query.page) || 1
       const limit = parseInt(req.query.per_page) || 5
