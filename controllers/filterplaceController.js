@@ -201,7 +201,7 @@ const getFilterPlaces = (model) =>
         not_found = 'Data not found'
       }
     } else {
-      res.send({ message: 'Data not found' })
+      final_result = places
     }
 
     if (final_result.length != 0) {
