@@ -335,19 +335,12 @@ const userUpdate = (req, res) => {
       }
 
       try {
-        if (req.body.removeImages) {
-          const user = await User.findByIdAndUpdate(
-            userId,
-            {
-              $unset: { profile_img: 1 },
-            },
-            { new: true }
-          )
-          user.save()
-          cloudinary.uploader.destroy(req.body.removeImages)
-        }
-
         if (req.file) {
+          const user = await User.findByIdAndUpdate(userId, {
+            $unset: { profile_img: 1 },
+          })
+          user.save()
+          cloudinary.uploader.destroy(user.profile_img.id)
           cloudinary.uploader.upload(
             req.file.path,
             { folder: 'images' },
