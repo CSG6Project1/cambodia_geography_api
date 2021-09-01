@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import placeRoutes from './routes/placeRoutes.js'
+import provinceRoutes from './routes/provinceRoutes.js'
 import searchplaceRoutes from './routes/searchplaceRoutes.js'
 import filterplaceRoutes from './routes/filterplaceRoutes.js'
 import autocompleterRoutes from './routes/autocompleterRoutes.js'
@@ -28,6 +29,7 @@ app.get('/', (req, res) => {
 })
 app.get('/api/account', authMiddleware, userDetail)
 app.use('/api/places', placeRoutes)
+app.use('/api/provinces', provinceRoutes)
 app.use('/api/searchplaces', searchplaceRoutes)
 app.use('/api/filterplaces', filterplaceRoutes)
 app.use('/api/autocompleter', autocompleterRoutes)
