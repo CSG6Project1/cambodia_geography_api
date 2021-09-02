@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler'
 import fuzzysearch from 'fuzzy-search'
 
 const linkPaginate = (increase, decrease, listQuery, first, last) => {
-  let base_URL = `${process.env.HOST}/api/filterplaces/result`
+  let base_URL = `${process.env.HOST}/api/autocompleter/result`
   let sign = '?'
   listQuery.forEach((q, index) => {
     if (index !== 0) sign = '&'
@@ -21,10 +21,24 @@ const linkPaginate = (increase, decrease, listQuery, first, last) => {
   return base_URL
 }
 
-const getFilterPlaces = (model) =>
+const getAutocompletePlaces = (model) =>
   asyncHandler(async (req, res) => {
     const place = await model.find()
-    
+    let tmp_result = {}
+    function cutdata(obj){
+        let cutted_result=[]
+        //cut data
+        for (const prop in obj) {
+            tmp_result["_id"]=obj[prop]["_id"]
+            tmp_result["type"]=obj[prop]["type"]
+            tmp_result["khmer"]=obj[prop]["khmer"]
+            tmp_result["english"]=obj[prop]["english"]
+            //final_result.data[prop]=tmp_result
+            cutted_result[prop] = tmp_result
+            tmp_result={}
+        }
+        return cutted_result
+    }
     function getplacetofilter(){
       if (req.query['keyword']) {
         const searcher2 = new fuzzysearch(place, ['khmer', 'english'], {
@@ -32,14 +46,41 @@ const getFilterPlaces = (model) =>
         })
         const result2 = searcher2.search(req.query['keyword'])
         //console.log("This is result2 length: "+result2.length)
-        console.log(result2)
-        return result2
+        //create temporary variable
+        let str_replace="<b>"+`${req.query['keyword']}`+"</b>"
+        let str_toreplace = new RegExp(req.query['keyword'],'g')
+        //make key into bold
+        if(req.query['keyword'].charCodeAt(0) > 6000 && req.query['keyword'].charCodeAt(0) < 6200){
+            for (const prop in result2) {
+                let tmp = result2[prop]["khmer"]
+                result2[prop]["khmer"]=tmp.replace(str_toreplace,str_replace)
+            }
+        }
+        if(req.query['keyword'].charCodeAt(0) >= 48 && req.query['keyword'].charCodeAt(0) < 130){
+            for (const prop in result2) {
+                let tmp = result2[prop]["english"]
+                result2[prop]["english"]=tmp.replace(str_toreplace,str_replace)
+            }
+        }   
+        //change type to autocomplete
+        for (const prop in result2) {
+            result2[prop]["type"]="autocompleter"
+        }
+        const result3 = cutdata(result2)
+        //response the result
+        if (result3.length != 0){
+            return result3
+        }
+        else{
+            res.send({message:"Data not found"})
+        }
       }
       else{
         return place
       }
     }
     
+
     const places = getplacetofilter()
 
     let province_search
@@ -206,9 +247,9 @@ const getFilterPlaces = (model) =>
     }
 
     //add comment length to search result
-    for (const prop in final_result) {
-      final_result[prop]["comment_length"]=final_result[prop]["comments"].length
-    }
+    // for (const prop in final_result) {
+    //   final_result[prop]["comment_length"]=final_result[prop]["comments"].length
+    // }
     
 
     if (final_result.length != 0) {
@@ -338,4 +379,4 @@ const getFilterPlaces = (model) =>
     }
   })
 
-export { getFilterPlaces }
+export { getAutocompletePlaces }
