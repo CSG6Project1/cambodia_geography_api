@@ -16,7 +16,6 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       {
-        "error": true,
         "message": "error message here"
       }
     title: Response

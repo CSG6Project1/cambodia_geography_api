@@ -1,29 +1,23 @@
 ---
 title: Authentication
-position_number: 2
+position_number: 2.0
 parameters:
   - name:
     content:
+headers:
+  - name:
+    content:
 content_markdown: |-
-  You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.
-
-  Add the API key to all requests as a GET parameter.
-
-  Nothing will work unless you include this API key
-  {: .error}
+  ![authentication](https://user-images.githubusercontent.com/29684683/131949157-d8a89ef6-0629-4b67-b0c2-5caf08024c75.png)
 left_code_blocks:
   - code_block:
     title:
     language:
 right_code_blocks:
-  - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: JQuery
-    language: javascript
-  - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
-    title: Curl
-    language: bash
+  - code_block:
+    title:
+    language:
+  - code_block:
+    title:
+    language:
 ---

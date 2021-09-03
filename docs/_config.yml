@@ -17,9 +17,12 @@ collections:
   documentation:
     title: Documentation
     position_number: 1
+  authentication:
+    title: Authentication
+    position_number: 2
   api:
     title: APIs
-    position_number: 2
+    position_number: 3
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

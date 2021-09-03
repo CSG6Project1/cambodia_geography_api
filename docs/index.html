@@ -30,6 +30,16 @@ title: API Docs
 						</dl>
 				{% endif %}
 
+				{% if doc.headers and doc.headers[0].name %}
+						<h6>Headers</h6>
+						<dl>
+								{% for header in doc.headers %}
+										<dt>{{ header.name }}</dt>
+										<dd>{{ header.content }}</dd>
+								{% endfor %}
+						</dl>
+				{% endif %}
+
 				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
 
 				{% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
