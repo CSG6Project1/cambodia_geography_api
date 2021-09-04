@@ -15,7 +15,7 @@ const upload = multer({
   fileFilter: fileFilter,
 })
 
-const singelUpload = upload.single('image')
+const singleUpload = upload.single('image')
 
 const userLogin = asyncHandler(async (req, res) => {
   const response = res.response
@@ -297,7 +297,7 @@ const userDetail = asyncHandler(async (req, res) => {
 })
 
 const userUpdate = (req, res) => {
-  singelUpload(
+  singleUpload(
     req,
     res,
     asyncHandler(async (err) => {

@@ -3,9 +3,12 @@ import {
   addSocialLinkages,
   deleteSocialLinkages,
 } from '../controllers/socialLinkagesController.js'
+import authMiddleware from '../middlewares/authMiddleware.js'
 
 const router = express.Router()
 
-router.post('/', addSocialLinkages).delete('/:provider', deleteSocialLinkages)
+router.route('/').post(authMiddleware, addSocialLinkages)
+
+router.route('/:provider').delete(authMiddleware, deleteSocialLinkages)
 
 export default router

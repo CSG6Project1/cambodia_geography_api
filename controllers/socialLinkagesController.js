@@ -4,6 +4,7 @@ import User from '../models/userModels.js'
 
 const addSocialLinkages = asyncHandler(async (req, res) => {
   const userId = req.id
+
   const id_token = req.body.id_token
   if (id_token) {
     admin
@@ -18,7 +19,7 @@ const addSocialLinkages = asyncHandler(async (req, res) => {
             message: 'This account has already linked',
           })
         } else {
-          const user = await User.findOneAndUpdate(userId)
+          const user = await User.findByIdAndUpdate(userId)
           user.credential_id.push(uId)
           user.providers.push(provider)
           user.save()
@@ -43,31 +44,38 @@ const deleteSocialLinkages = asyncHandler(async (req, res) => {
   const userId = req.id
   const provider = req.params.provider
 
-  const user = await User.findOne(userId)
+  const user = await User.findOne({ _id: userId })
   const index = user.providers.findIndex((e) => {
     return e === provider
   })
 
+  if (!user.email && user.providers.length === 1) {
+    return res.status(403).send({
+      message: 'Disconnect failed',
+    })
+  }
+
   if (index === -1) {
     return res.status(403).send({
-      message: 'Invalid Provider',
+      message: 'Provider Not Found',
     })
   }
 
   const string = `credential_id.${index}`
   try {
-    const user1 = await User.findOneAndUpdate(userId, {
+    const user = await User.findOneAndUpdate(userId, {
       $unset: { [string]: 1 },
     })
-    await user1.credential_id.pull(null)
-    user1.save()
+    await user.credential_id.pull(null)
+    await user.providers.pull(provider)
+    user.save()
     const responseProvider = provider.split('.com')[0]
     return res.status(200).send({
       message: `${responseProvider.toUpperCase()} Disconnected Successfully`,
     })
   } catch (error) {
     return res.status(403).send({
-      message: 'Disconnected failed',
+      message: 'Disconnect failed',
     })
   }
 })
