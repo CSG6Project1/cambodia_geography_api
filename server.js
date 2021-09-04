@@ -6,6 +6,7 @@ import searchplaceRoutes from './routes/searchplaceRoutes.js'
 import filterplaceRoutes from './routes/filterplaceRoutes.js'
 import autocompleterRoutes from './routes/autocompleterRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
+import socialLinkagesRoutes from './routes/socialLinkagesRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import verificationRoutes from './routes/verificationRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
@@ -34,6 +35,7 @@ app.use('/api/autocompleter', autocompleterRoutes)
 app.use('/api/comment', commentRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/confirmation', verificationRoutes)
+app.use('/api/user_account_linkages', socialLinkagesRoutes)
 
 const PORT = process.env.PORT || 5000
 

@@ -289,7 +289,7 @@ const userList = (model) =>
 const userDetail = asyncHandler(async (req, res) => {
   const userId = req.id
 
-  const user = await User.findById(userId).select('-password -credential_id')
+  const user = await User.findById(userId).select('-password')
 
   res.send({
     data: user,
