@@ -3,6 +3,7 @@ import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken'
 import User from '../models/userModels.js'
+import ejs from 'ejs'
 
 dotenv.config()
 
@@ -30,10 +31,28 @@ const sendVerification = asyncHandler(async (req, res) => {
     locale === 'km'
       ? 'សូមបញ្ជាក់គណនីអ៊ីមែលរបស់អ្នក'
       : 'Please confirm your Email account'
-  const htmlStr =
-    locale === 'km'
-      ? `សួស្តី,<br> សូមចុចលើតំណភ្ជាប់ដើម្បីផ្ទៀងផ្ទាត់អ៊ីមែលរបស់អ្នក </br><a href='${url}'>សូមចុចនៅទីនេះ</a> `
-      : `Hello,<br> Please Click on the link to verify your email.<br><a href='${url}'>Click here to verify</a>`
+
+  const htmlStr = await ejs.renderFile(
+    './templates/email_confirmation.ejs',
+    {
+      head_name: 'Cambodia Geography',
+      action_url: 'cambodia-geography.com',
+      title: 'Verify your email address',
+      subtitle:
+        "Thanks for signing up for Cambodia Geography! We're excited to have you as an early user.",
+      verify_button_label: 'Verify Email',
+      thanks: 'Thanks, ',
+      send_by: 'The Cambodia Geography Team',
+      issue_message:
+        'If you’re having trouble clicking the button, copy and paste the URL below into your web browser.',
+      action_url: url,
+      office: 'Cambodia Academy of Digital Technology (CADT)',
+      office_location:
+        'National Road 6A, Kthor, Prek Leap ChroyChangvar, Phnom Penh',
+    },
+    {}
+  )
+
   const info = await transporter.sendMail({
     from: 'Cambodia Geography <cambodia-geography@gmail.com>',
     to: user.email,
