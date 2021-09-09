@@ -6,6 +6,7 @@ import searchplaceRoutes from './routes/searchplaceRoutes.js'
 import filterplaceRoutes from './routes/filterplaceRoutes.js'
 import autocompleterRoutes from './routes/autocompleterRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
+import bookmarkRoutes from './routes/bookmarkRoutes.js'
 import socialLinkagesRoutes from './routes/socialLinkagesRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import verificationRoutes from './routes/verificationRoutes.js'
@@ -33,6 +34,7 @@ app.use('/api/searchplaces', searchplaceRoutes)
 app.use('/api/filterplaces', filterplaceRoutes)
 app.use('/api/autocompleter', autocompleterRoutes)
 app.use('/api/comment', commentRoutes)
+app.use('/api/bookmark',bookmarkRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/confirmation', verificationRoutes)
 app.use('/api/user_account_linkages', socialLinkagesRoutes)
