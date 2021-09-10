@@ -1,11 +1,13 @@
 import express from 'express'
 import {
   getBookmarkDetail, 
-  deleteplaceinBookmark, 
-  addplacetoBookmark
+  deleteaplaceinBookmark, 
+  addplacetoBookmark,
+  emptyplaceinBookmark,
+  deletemultipleplaceinBookmark
 } from '../controllers/bookmarkController.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
-import Place from '../models/placeModels.js'
+
 
 const router = express.Router()
 
@@ -13,7 +15,16 @@ const router = express.Router()
 router
   .route('/')
   .get(authMiddleware, getBookmarkDetail)
-  .delete(authMiddleware, deleteplaceinBookmark)
   .post(authMiddleware, addplacetoBookmark)
+router
+  .route('/remove_place/:placeId')
+  .delete(authMiddleware, deleteaplaceinBookmark)
+router
+  .route('/empty')
+  .delete(authMiddleware, emptyplaceinBookmark)
+router
+  .route('/remove_places')
+  .delete(authMiddleware, deletemultipleplaceinBookmark)
+
 
 export default router
