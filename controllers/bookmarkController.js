@@ -272,6 +272,7 @@ const deletemultipleplaceinBookmark = asyncHandler(async (req, res) => {
   }
 
 })
+
 const addplacetoBookmark = asyncHandler(async (req, res) => {
 
   const placeId = req.body.placeId
@@ -331,5 +332,4 @@ const addplacetoBookmark = asyncHandler(async (req, res) => {
     }
   }
 })
-
 export { getBookmarkDetail, deleteaplaceinBookmark, addplacetoBookmark, emptyplaceinBookmark, deletemultipleplaceinBookmark }
