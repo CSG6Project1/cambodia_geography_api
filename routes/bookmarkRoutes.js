@@ -24,5 +24,4 @@ router
 router
   .route('/remove_places')
   .delete(authMiddleware, deletemultipleplaceinBookmark)
-
 export default router

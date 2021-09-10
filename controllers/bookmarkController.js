@@ -300,6 +300,7 @@ const addplacetoBookmark = asyncHandler(async (req, res) => {
             message: 'bookmark already added',
           })
         }
+
       } else {
         res.send({
           message: 'Cant add bookmark',
@@ -339,5 +340,4 @@ const addplacetoBookmark = asyncHandler(async (req, res) => {
     }
   }
 })
-
 export { getBookmarkDetail, deleteaplaceinBookmark, addplacetoBookmark, emptyplaceinBookmark, deletemultipleplaceinBookmark }
