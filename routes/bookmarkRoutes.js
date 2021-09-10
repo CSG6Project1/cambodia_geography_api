@@ -8,7 +8,6 @@ import {
 } from '../controllers/bookmarkController.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
 
-
 const router = express.Router()
 
 
@@ -25,6 +24,4 @@ router
 router
   .route('/remove_places')
   .delete(authMiddleware, deletemultipleplaceinBookmark)
-
-
 export default router

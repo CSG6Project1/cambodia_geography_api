@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import Bookmark from '../models/bookmarkModels.js'
+import fuzzysearch from 'fuzzy-search'
 
 const getBookmarkDetail = asyncHandler(async (req, res) => {
   const type = req.query['type']
@@ -272,7 +273,6 @@ const deletemultipleplaceinBookmark = asyncHandler(async (req, res) => {
   }
 
 })
-
 const addplacetoBookmark = asyncHandler(async (req, res) => {
 
   const placeId = req.body.placeId
@@ -287,12 +287,20 @@ const addplacetoBookmark = asyncHandler(async (req, res) => {
     }
     try {
       if (bookmarks) {
-        const bookmarktoupdate = await Bookmark.findOneAndUpdate({ user: uid })
-        bookmarktoupdate.places.push(placeId)
-        bookmarktoupdate.save()
-        res.send({
-          message: 'bookmark added',
-        })
+        let bookmark_place=bookmarks.places
+        if(bookmark_place.indexOf(placeId) < 0){
+          const bookmarktoupdate = await Bookmark.findOneAndUpdate({ user: uid })
+          bookmarktoupdate.places.push(placeId)
+          bookmarktoupdate.save()
+          res.send({
+            message: 'bookmark added',
+          })
+        }else{
+          res.send({
+            message: 'bookmark already added',
+          })
+        }
+
       } else {
         res.send({
           message: 'Cant add bookmark',
