@@ -11,6 +11,7 @@ import socialLinkagesRoutes from './routes/socialLinkagesRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import verificationRoutes from './routes/verificationRoutes.js'
 import authMiddleware from './middlewares/authMiddleware.js'
+import totalModelsRoutes from './routes/totalModelsRoutes.js'
 import { userDetail } from './controllers/userController.js'
 import cors from 'cors'
 import admin from 'firebase-admin'
@@ -34,10 +35,11 @@ app.use('/api/searchplaces', searchplaceRoutes)
 app.use('/api/filterplaces', filterplaceRoutes)
 app.use('/api/autocompleter', autocompleterRoutes)
 app.use('/api/comment', commentRoutes)
-app.use('/api/bookmark',bookmarkRoutes)
+app.use('/api/bookmark', bookmarkRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/confirmation', verificationRoutes)
 app.use('/api/user_account_linkages', socialLinkagesRoutes)
+app.use('/api/totalCounts', totalModelsRoutes)
 
 const PORT = process.env.PORT || 5000
 
