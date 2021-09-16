@@ -81,7 +81,9 @@ const verifyVerification = asyncHandler(async (req, res) => {
       { is_verify: true }
     )
     user.save()
-    return res.send('Verify Successfully')
+    return res.send(
+      'Verify Successfully <a href="camgeo://cambodia-geography.herokuapp.com">Click here to return to Application</a>'
+    )
   } catch (error) {
     return res.status(403).send({
       message: 'User not Found',
