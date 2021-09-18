@@ -63,9 +63,12 @@ const deleteSocialLinkages = asyncHandler(async (req, res) => {
 
   const string = `credential_id.${index}`
   try {
-    const user = await User.findOneAndUpdate(userId, {
-      $unset: { [string]: 1 },
-    })
+    const user = await User.findOneAndUpdate(
+      { _id: userId },
+      {
+        $unset: { [string]: 1 },
+      }
+    )
     await user.credential_id.pull(null)
     await user.providers.pull(provider)
     user.save()
