@@ -37,5 +37,11 @@ npm run server
 ```
 Navigate to `http://localhost:5000`
 
+## Authors
+
+**Group 4** - [CADT's students](http://www.cadt.edu.kh/).
+See also the list of [contributors](https://github.com/CSG6Project1/cambodia_geography_mobile/contributors) who participated in this project.
+
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
