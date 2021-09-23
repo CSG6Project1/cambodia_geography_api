@@ -30,6 +30,7 @@ For Cloud API key you can get it on [Cloudinary](https://cloudinary.com/)
 cd <project_name>
 npm install
 ```
+* Create a folder call `uploads` for image uploads 
 * Build and run the project
  ```bash
 npm run server
