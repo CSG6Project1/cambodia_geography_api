@@ -14,6 +14,7 @@ import authMiddleware from './middlewares/authMiddleware.js'
 import totalModelsRoutes from './routes/totalModelsRoutes.js'
 import { userDetail } from './controllers/userController.js'
 import cors from 'cors'
+import members from './data/members.js'
 import admin from 'firebase-admin'
 
 admin.initializeApp({
@@ -40,6 +41,7 @@ app.use('/api/user', userRoutes)
 app.use('/api/confirmation', verificationRoutes)
 app.use('/api/user_account_linkages', socialLinkagesRoutes)
 app.use('/api/totalCounts', totalModelsRoutes)
+app.use('/api/members', (_, res) => res.send(members))
 
 const PORT = process.env.PORT || 5000
 
