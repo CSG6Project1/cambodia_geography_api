@@ -236,8 +236,17 @@ const deletePlace = asyncHandler(async (req, res) => {
   }
 
   try {
-    const place = await Place.findByIdAndRemove(id)
+    const place = await Place.findById(id)
+
+    if (place.type == "province") {
+      res.status(401).send({
+        message: 'Can\'t delete province, Please delete them manually in mongodb.',
+      })
+      return
+    }
+
     if (place) {
+      place = await Place.findByIdAndDelete(id)
       if (Object.keys(place.images).length !== 0) {
         place.images.forEach((img) => {
           cloudinary.uploader.destroy(img.id)
